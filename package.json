@@ -1,0 +1,27 @@
+{
+  "name": "simple-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gulp clean",
+    "watch": "gulp watch",
+    "live": "gulp && node live-server.js",
+    "build": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch-sass": "^1.4.1"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "http-server": "^0.11.1",
+    "live-server": "^1.2.1"
+  }
+}
