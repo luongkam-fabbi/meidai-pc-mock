@@ -733,21 +733,27 @@ input::placeholder {
 
     .item {
       margin-left: 20px;
+
       .content {
         position: relative;
         background: #fff;
         padding: 10px 120px;
+
         .year {
           font-size: 20px;
         }
+
         .title {
           font-size: 38px;
           font-weight: bold;
         }
+
         img {
           position: absolute;
-          width: 10%;
+          width: 80px;
           height: auto;
+          top: -40px;
+          left: 20px;
         }
       }
     }
@@ -903,6 +909,30 @@ input::placeholder {
         margin: 25px 0;
         font-size: 16px;
       }
+    }
+  }
+}
+
+.page-my-list {
+  #up-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    bottom: 300px;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    background: #202020;
+    z-index: 9999;
+
+    img {
+      width: 15px;
+      height: auto;
+    }
+
+    p {
+      color: #fff;
+      font-weight: bold;
     }
   }
 }
