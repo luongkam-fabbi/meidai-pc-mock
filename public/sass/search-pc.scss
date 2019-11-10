@@ -1,0 +1,211 @@
+.page-search-pc{
+    .menu{
+        background-color: #E7EAEB;
+        padding-top: 20px;
+        padding-bottom: 17px;
+        .list-menu{
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            button{
+                width: 191px;
+                height: 58px;
+                background-color: #E7EAEB;
+                border-radius:5px;
+                font-size: 20px;
+                font-family: 'YuGo-Bold';
+                letter-spacing: 0.44px;
+                color: #191919;
+            }
+            button:focus{
+                background: #fff;
+            }
+        }
+    }
+    .search{
+        background-color: #fff;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .top-search{
+            background-color: #E7EAEB;
+            border-radius:5px ;
+            padding: 40px;
+            .spe-search{
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                .form-input {
+                    width: 81%;
+                    border: 1px solid #ccc;
+                    height: 65px;
+                    position: relative;
+                    background: #fff;
+                    border-radius: 5px;
+                    .icon {
+                        height: 100%;
+                        width: 65px;
+                        img {
+                            height: 20px;
+                            width: 21px;
+                          }
+                    }
+                    input {
+                        border: 0;
+                        width: calc(100% - 80px);
+                        font-size: 15px;
+                        color: #636363;
+                        padding-left: 10px;
+                        height: 65px;
+                    }
+                    input:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                      input::placeholder {
+                        font-size: 15px;
+                        color: #636363;
+                    }
+                  }
+                .btn-search {
+                    height: 66px;
+                    width: 212px;
+                    background: linear-gradient(to left, #1e7b9c, #166394);
+                    font-size: 24px;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-family: 'YuGo-Bold';
+                    input{
+                        background-color: #fff;
+                        border-radius: 5px;
+                    }
+                    img{
+                        height: 30px;
+                        width: 33px;
+                        margin-right: 20px;
+                    }
+                  }
+            }
+            .keyword{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                p{
+                    font-size: 22px;
+                    padding-right: 20px;
+                    width: 13%;
+                }
+                .list-keyword{
+                    width: 80%;
+                    button{
+                        padding: 8px 20px;
+                        font-size: 16px;
+                        font-family: 'YuGo-Medium';
+                        letter-spacing: 0.32px;
+                        background-color: #fff;
+                        border-radius: 10px;
+                        color: #1B1B1B;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .body-search{
+            margin-top: 60px;
+            .conditon-search{
+                height: 103px;
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 0px;
+                .text-conditon{
+                    width: 24%;
+                    background-color: #707070;
+                    font-size: 24px;
+                    font-family: 'YuGo-Bold';
+                    letter-spacing: 0.64px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 3%;
+                    border-bottom: 1px solid #fff;
+                }
+                .right-conditon{
+                    background-color: #fff;
+                    width: 76%;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 100%;
+                    border-top: 1px solid #B5B5B5;
+                    border-bottom: 1px solid #B5B5B5;
+                    .left-folder{
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 4%;
+
+                        p{
+                            font-size: 22px;
+                            font-family: 'YuGo-Medium';
+                            letter-spacing: 0.66px;
+                        }
+                        img{
+                            width: 40px;
+                            height: auto;
+                        }
+                    }
+                    .right-folder{
+                        display: flex;
+                        align-items: center;
+                        padding-right: 20px;
+                        
+                        button{
+                            border: 0.5px solid #B5B5B5;
+                            background-color: #fff;
+                            color: #B5B5B5;
+                            font-size: 18px;
+                            font-family: 'YuGo-Medium';
+                            padding: 12px 20px;
+                            border-radius:5px ;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-family: 'YuGo-Medium';
+                        }
+                    }
+                } 
+            }
+        }
+        .button-search{
+            height: 100px;
+            width: 60%;
+            margin: 60px auto 100px;
+            display: flex;
+            justify-content: space-between;
+            .btn-left{
+                height: 86px;
+                width: 320px;
+                background: #fff;
+                font-size: 24px;
+                color: #5C5C5C;
+                border-radius: 5px;
+                font-family: 'YuGo-Bold';
+                border: 1px solid #CECECE;
+              }
+            .btn-search {
+                height: 86px;
+                width: 432px;
+                background: linear-gradient(to left, #1e7b9c, #166394);
+                font-size: 24px;
+                color: #fff;
+                border-radius: 5px;
+                font-family: 'YuGo-Bold';
+                img{
+                    height: 30px;
+                    width: 33px;
+                    margin-right: 20px;
+                }
+              }
+        }
+    }
+}
