@@ -1,19 +1,21 @@
 $(document).ready(function () {
     const arr = ["find-company", "find-meeting", "find-source"];
+
     function closeAllTab() {
         arr.forEach(item => {
-            $("#"+item).css('display', 'none');
+            $("#" + item).css('display', 'none');
         });
     }
+
     arr.forEach(item => {
-        const tabItem = $("input[aria-controls = "+item+"]");
-        const tabItemCheck = $("input[aria-controls = "+item+"]:checked");
+        const tabItem = $("input[aria-controls = " + item + "]");
+        const tabItemCheck = $("input[aria-controls = " + item + "]:checked");
         if (tabItemCheck.length > 0) {
-            $("#"+item).css('display', 'block');
+            $("#" + item).css('display', 'block');
         }
         tabItem.click(function () {
             closeAllTab();
-            $("#"+item).css('display', 'block');
+            $("#" + item).css('display', 'block');
         });
     });
 
@@ -21,7 +23,7 @@ $(document).ready(function () {
         slidesToShow: 1.7,
         slidesToScroll: 1,
         speed: 500,
-        // autoplay: true,
+        autoplay: true,
         arrows: false,
         dotsClass: 'slick-dots-slide'
     });
@@ -32,5 +34,20 @@ $(document).ready(function () {
         autoplay: true,
         arrows: false,
         dotsClass: 'slick-dots-slide'
+    });
+
+    const elmScrollTop = '#up-to-top';
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) { // 300px from top
+            $(elmScrollTop).fadeIn();
+        } else {
+            $(elmScrollTop).fadeOut();
+        }
+    });
+
+    $(elmScrollTop).click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
     });
 });
