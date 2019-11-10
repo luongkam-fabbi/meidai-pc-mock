@@ -25,12 +25,12 @@ gulp.task('serve', function() {
 gulp.task('styles', () => {
     return gulp.src('public/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('public/css/'));
+        .pipe(gulp.dest('public/assets/css/'));
 });
 
 gulp.task('clean', () => {
     return del([
-        'public/css/*.css',
+
     ]);
 });
 
