@@ -641,8 +641,10 @@ input::placeholder {
         font-weight: bold; }
       .page-my-list .section-main-slide .item .content img {
         position: absolute;
-        width: 10%;
-        height: auto; }
+        width: 80px;
+        height: auto;
+        top: -40px;
+        left: 20px; }
   .page-my-list .section-main-slide .slick-dots-slide {
     display: flex;
     justify-content: center;
@@ -761,6 +763,23 @@ input::placeholder {
     .page-my-list .section-slide .content p {
       margin: 25px 0;
       font-size: 16px; }
+
+.page-my-list #up-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 300px;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  background: #202020;
+  z-index: 9999; }
+  .page-my-list #up-to-top img {
+    width: 15px;
+    height: auto; }
+  .page-my-list #up-to-top p {
+    color: #fff;
+    font-weight: bold; }
 
 /* Tablet */
 @media only screen and (max-width: 1280px) {
