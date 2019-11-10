@@ -16,4 +16,21 @@ $(document).ready(function () {
             $("#"+item).css('display', 'block');
         });
     });
+
+    $('.main-single-item').slick({
+        slidesToShow: 1.7,
+        slidesToScroll: 1,
+        speed: 500,
+        // autoplay: true,
+        arrows: false,
+        dotsClass: 'slick-dots-slide'
+    });
+
+    $('.single-item').slick({
+        dots: true,
+        speed: 500,
+        autoplay: true,
+        arrows: false,
+        dotsClass: 'slick-dots-slide'
+    });
 });

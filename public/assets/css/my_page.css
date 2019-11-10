@@ -1,5 +1,39 @@
+@charset "UTF-8";
 .page-my-list {
   background: #f3f3f3; }
+
+.page-my-list .tab-head > input[type="radio"] {
+  position: absolute;
+  left: -200vw; }
+
+.page-my-list .tab-set .tab-panel {
+  display: none; }
+
+.page-my-list .tab-head > label {
+  position: relative;
+  display: inline-block;
+  padding: 10px 35px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  border-radius: 5%; }
+
+.page-my-list .tab-head > input:checked + label {
+  background: #fff; }
+
+.page-my-list .tab-head {
+  background: #e7eaeb; }
+
+.page-my-list .tab-head img {
+  position: absolute;
+  top: -35px;
+  width: 200px;
+  height: auto;
+  left: -250px; }
+
+.page-my-list .tab-head > label[for="tab1"] {
+  position: relative; }
 
 .page-my-list .top-section {
   width: 100%;
@@ -457,11 +491,10 @@ input::placeholder {
   top: calc(50% - 2px); }
 
 .page-my-list .section-up-coming {
-  background: #fff;
-  margin-bottom: 50px; }
+  background: #fff; }
 
 .page-my-list .section-up-coming .my-container {
-  padding-bottom: 150px; }
+  padding-bottom: 50px; }
 
 .page-my-list .section-up-coming .action {
   padding-top: 30px;
@@ -553,6 +586,181 @@ input::placeholder {
 
 .page-my-list .section-up-coming .tag-container {
   position: relative; }
+
+.page-my-list .section-welcome {
+  position: relative; }
+  .page-my-list .section-welcome > img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; }
+  .page-my-list .section-welcome .btn-container {
+    margin-top: 30%;
+    width: 55%; }
+    .page-my-list .section-welcome .btn-container .btn-primary {
+      flex: 1;
+      position: relative;
+      font-size: 20px;
+      color: #19a4b9;
+      cursor: pointer;
+      padding: 3% 0;
+      font-weight: bold; }
+      .page-my-list .section-welcome .btn-container .btn-primary img {
+        margin-right: 10px;
+        height: auto;
+        width: 30px; }
+    .page-my-list .section-welcome .btn-container .btn-primary.left {
+      color: #fff;
+      background: linear-gradient(to left, #1e7b9c, #166394);
+      margin-right: 40px; }
+    .page-my-list .section-welcome .btn-container .btn-primary.right {
+      background: #fff;
+      color: #000;
+      border: 1px solid #000; }
+  .page-my-list .section-welcome .wrap {
+    z-index: 2;
+    position: absolute;
+    width: 100%; }
+
+.page-my-list .section-main-slide {
+  background: #edf2f1;
+  padding-top: 10px;
+  padding-bottom: 40px; }
+  .page-my-list .section-main-slide .item {
+    margin-left: 20px; }
+    .page-my-list .section-main-slide .item .content {
+      position: relative;
+      background: #fff;
+      padding: 10px 120px; }
+      .page-my-list .section-main-slide .item .content .year {
+        font-size: 20px; }
+      .page-my-list .section-main-slide .item .content .title {
+        font-size: 38px;
+        font-weight: bold; }
+      .page-my-list .section-main-slide .item .content img {
+        position: absolute;
+        width: 10%;
+        height: auto; }
+  .page-my-list .section-main-slide .slick-dots-slide {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    .page-my-list .section-main-slide .slick-dots-slide li.slick-active button:before {
+      opacity: .75;
+      color: black; }
+    .page-my-list .section-main-slide .slick-dots-slide li {
+      position: relative;
+      display: inline-block;
+      width: 7px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer; }
+      .page-my-list .section-main-slide .slick-dots-slide li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent; }
+      .page-my-list .section-main-slide .slick-dots-slide li button:before {
+        font-family: 'slick';
+        font-size: 12px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+
+.page-my-list .section-slide {
+  margin-bottom: 30px; }
+  .page-my-list .section-slide .slick-dots-slide {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    .page-my-list .section-slide .slick-dots-slide li.slick-active button:before {
+      opacity: .75;
+      color: black; }
+    .page-my-list .section-slide .slick-dots-slide li {
+      position: relative;
+      display: inline-block;
+      width: 7px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer; }
+      .page-my-list .section-slide .slick-dots-slide li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent; }
+      .page-my-list .section-slide .slick-dots-slide li button:before {
+        font-family: 'slick';
+        font-size: 30px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+  .page-my-list .section-slide div.slide {
+    margin-left: 20%;
+    width: 80%;
+    height: auto;
+    margin-top: -150px; }
+    .page-my-list .section-slide div.slide .item {
+      width: 100%;
+      height: auto; }
+  .page-my-list .section-slide .content {
+    padding: 30px;
+    background: #fff;
+    width: 480px;
+    margin-top: -250px;
+    position: relative; }
+    .page-my-list .section-slide .content button {
+      height: 50px;
+      width: 200px;
+      background: #fff;
+      font-size: 20px;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 3px; }
+    .page-my-list .section-slide .content img {
+      width: 26px;
+      height: auto; }
+    .page-my-list .section-slide .content h3 {
+      font-size: 26px;
+      font-weight: bold; }
+    .page-my-list .section-slide .content p {
+      margin: 25px 0;
+      font-size: 16px; }
 
 /* Tablet */
 @media only screen and (max-width: 1280px) {
