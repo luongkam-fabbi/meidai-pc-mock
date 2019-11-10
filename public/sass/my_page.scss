@@ -605,8 +605,9 @@ input::placeholder {
   background: #ac9749;
   padding: 3px 10px;
   left: 10px;
-  top: 122px;
+  top: -14px;
   color: #fff;
+  white-space: nowrap;
 }
 
 .page-my-list .section-up-coming .group-list-items .list-items .list-items-tag {
@@ -627,11 +628,13 @@ input::placeholder {
   margin-left: 10px;
 }
 
-/* Tablet */
-
-.sp-content {
-  display: none;
+.page-my-list .section-up-coming {
+  .tag-container {
+    position: relative;
+  }
 }
+
+/* Tablet */
 
 @media only screen and (max-width: 1280px) {
   .page-my-list .result-pagination {
@@ -816,11 +819,4 @@ input::placeholder {
     width: 40px;
     height: auto;
   }
-}
-
-.my-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 40px;
 }
