@@ -172,3 +172,26 @@
         height: 30px;
         width: 33px;
         margin-right: 20px; }
+
+.page-search-pc .end {
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center; }
+  .page-search-pc .end .link-page {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; }
+    .page-search-pc .end .link-page img {
+      width: 30px;
+      height: auto; }
+    .page-search-pc .end .link-page .active {
+      text-decoration: underline; }
+    .page-search-pc .end .link-page a {
+      font-size: 20px;
+      font-family: 'YuGo-Medium';
+      color: #222222; }

@@ -208,4 +208,31 @@
               }
         }
     }
+    .end{
+        height: 400px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        .link-page{
+            border-top:1px solid #707070;
+            border-bottom:1px solid #707070;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            img{
+                width: 30px;
+                height: auto;
+            }
+            .active{
+                text-decoration: underline;
+            }
+            a{
+                font-size: 20px;
+                font-family: 'YuGo-Medium';
+                color: #222222;
+            }
+        }
+    }
 }
