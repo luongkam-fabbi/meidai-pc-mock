@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "gulp clean",
     "watch": "gulp watch",
-    "live": "gulp && node live-server.js",
+    "serve": "gulp && gulp serve",
+    "live": "node live-server.js",
     "build": "gulp"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "gulp-watch-sass": "^1.4.1"
   },
   "dependencies": {
+    "gulp-live-server": "0.0.31",
     "gulp-util": "^3.0.8",
     "http-server": "^0.11.1",
     "live-server": "^1.2.1"
