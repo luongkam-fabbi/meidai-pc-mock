@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="assets/css/lib/fontawesome.css"/>
     <link rel="stylesheet" href="assets/css/lib/yakuhanjp.min.css"/>
     <link rel="stylesheet" href="assets/css/lib/materialdesignicons.min.css"/>
+    <link href="assets/css/company_list.css" rel="stylesheet" media="all" type="text/css"/>
     <link href="assets/css/application.css" rel="stylesheet" media="all" type="text/css"/>
     <link href="assets/css/flex.css" rel="stylesheet" media="all" type="text/css"/>
     <link href="assets/css/guidance_list.css" rel="stylesheet" media="all" type="text/css"/>
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/company_list.js"></script>
 </head>
 
 <body>
@@ -151,7 +154,9 @@
                             <div class="btnx2">
                                 <!-- <div class="btn-left"> -->
                                 <button
-                                        class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
+                                        class="btn btn-left"
+                                        id="btn_open_modal"
+                                        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
                                 </button>
                                 <button class="btn btn-right">説明会予約</button>
                                 <!-- </div> -->
@@ -371,7 +376,123 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="page_modal" id="my_page_modal">
+            <div class="page_modal_content">
+               <!-- page_modal_header -->
+            <div class="page_modal_header">
+                <button class="modal_close_btn" id="my_modal_close_btn">
+                </button>
+                <p class="modal_title">業種を選択してください</p>
+              </div>
+              <!-- page_modal_container -->
+              <div class="page_modal_container">
+                <!-- search_checkbox_results -->
+                <div class="search_checkbox_results">
+                  <div class="search_checkbox_result_item">
+                    <div class="search_checkbox_result_item_content">WEB</div>
+                    <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                    </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">WEB</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>                                                                                 
+                  <div class="search_checkbox_result_item">
+                      <p class="search_checkbox_result_item_content">ABCD</p>
+                      <button class="search_checkbox_result_item_delete_btn" id="my_search_checkbox_result_item_delete_btn"></button>
+                  </div>
+                  <div class="search_checkbox_result_item search_checkbox_result_item_conrfirm_btn" id="my_search_checkbox_result_item_confirm_btn">
+                    条件をクリアする
+                  </div>
+                </div>
+                <!-- modal_content -->
+                <div class="modal_content">
+                    <!-- options_list -->
+                  <div class="options_list">
+                    <button class="option_item_btn option_item_btn_selected" id='my_option_item_btn'>サービス・インフラ</button>
+                    <button class="option_item_btn" id='my_option_item_btn'>ABCD</button>
+                    <button class="option_item_btn" id='my_option_item_btn'>EFGH</button>
+                  </div>
+                  <!-- option_item_values -->
+                  <div class="option_item_values">
+                    <div class="option_item_value_item">
+                        <label class="option_item_value_label checkbox-default-area">
+                          <input type="checkbox" checked class="checkbox_input_field checkbox-default-input " id="checkbox_input_field_1_all">
+                          <span class="option_item_value_label_text" >サービス・百貨店・流通・小売すべて </span>
+                        </label>
+                    </div>
+                    <ol>
+                      <li>
+                          <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1" id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">dsads</span>
+                            </label>
+                          </div>
+                      </li>
+                      <li>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1" id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">dsadsdasd</span>
+                            </label>
+                          </div>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <!-- modal_footer -->
+                <div class="modal_footer">
+                  <!-- number-result -->
+                  <div class="result flex__start__center">
+                      <img src="assets/images/result.png" alt="">
+                      <div class="number-result flex__center__end">
+                          380
+                          <span>社</span>
+                      </div>
+                  </div>
+                  <div class="modal_footer_btns">
+                    <button class="footer_btn footer_btn_delete">クリアする</button>
+                    <button class="footer_btn footer_btn_select">選択する</button>
+                    <button class="footer_btn footer_btn_add_cond">+ さらに条件を追加</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
 </body>
 
 </html>
