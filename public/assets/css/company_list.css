@@ -1,0 +1,180 @@
+.page-guidance-list .page_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 15%; }
+  .page-guidance-list .page_modal .page_modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 80%;
+    border-radius: 5px; }
+  .page-guidance-list .page_modal .page_modal_header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: #cccccc solid 1px;
+    padding: 20px; }
+  .page-guidance-list .page_modal .modal_close_btn {
+    background-size: 30px;
+    background: url("../images/icon-back.png") no-repeat;
+    width: 20%; }
+  .page-guidance-list .page_modal .modal_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%; }
+  .page-guidance-list .page_modal .search_checkbox_results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center; }
+  .page-guidance-list .page_modal .search_checkbox_result_item {
+    border-radius: 3px;
+    border: #cccccc solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    align-items: center; }
+  .page-guidance-list .page_modal .search_checkbox_result_item_delete_btn {
+    background: url("../images/icon-close.png") no-repeat;
+    background-size: 15px;
+    width: 15px;
+    height: 15px; }
+  .page-guidance-list .page_modal .search_checkbox_result_item_content {
+    font-size: 12px;
+    margin-right: 15px;
+    line-height: 1.5; }
+  .page-guidance-list .page_modal .search_checkbox_result_item_conrfirm_btn {
+    background-color: #878787;
+    font-size: 12px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; }
+  .page-guidance-list .page_modal .page_modal_container {
+    width: 100%; }
+  .page-guidance-list .page_modal .modal_content {
+    display: flex;
+    flex-direction: row;
+    border-top: #cccccc solid 1px;
+    border-bottom: #cccccc solid 1px;
+    width: 100%; }
+    .page-guidance-list .page_modal .modal_content .options_list {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      border-right: #cccccc solid 1px;
+      width: 25%; }
+      .page-guidance-list .page_modal .modal_content .options_list .option_item_btn {
+        width: 100%;
+        text-align: start;
+        background-color: #f3f4f5;
+        margin-bottom: 7px;
+        padding: 3px 5px;
+        font-size: 12px;
+        border-radius: 3px; }
+      .page-guidance-list .page_modal .modal_content .options_list .option_item_btn_selected {
+        background-color: #c9cdd1 !important; }
+    .page-guidance-list .page_modal .modal_content .option_item_values {
+      padding: 20px;
+      display: flex;
+      flex-direction: column; }
+      .page-guidance-list .page_modal .modal_content .option_item_values ol {
+        padding-left: 10px; }
+      .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item {
+        padding-bottom: 10px; }
+        .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area {
+          position: relative;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+          display: -ms-inline-flexbox;
+          display: -webkit-inline-flex; }
+          .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .checkbox-default-input {
+            display: inline-flex;
+            width: 20px;
+            height: 20px; }
+            .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .checkbox-default-input:checked + ::after {
+              background-color: #19a4b9;
+              border-color: #fff; }
+            .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .checkbox-default-input:checked + ::before {
+              background-color: #19a4b9;
+              border-color: #19a4b9; }
+            .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .checkbox-default-input:focus {
+              box-shadow: none;
+              border-radius: 3px; }
+          .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .option_item_value_label_text {
+            font-size: 12px;
+            padding-left: 10px; }
+            .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .option_item_value_label_text:before {
+              position: absolute;
+              content: "";
+              width: 20px;
+              height: 20px;
+              left: 0;
+              top: 0;
+              display: block;
+              border: 1px solid #d5d5d5;
+              border-radius: 3px; }
+            .page-guidance-list .page_modal .modal_content .option_item_values .option_item_value_item .checkbox-default-area .option_item_value_label_text:after {
+              position: absolute;
+              content: "";
+              border-bottom: 2px solid #d5d5d5;
+              border-right: 2px solid #d5d5d5;
+              height: 11px;
+              left: 7px;
+              top: 3px;
+              transform: rotate(40deg);
+              width: 5px; }
+  .page-guidance-list .page_modal .modal_footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px; }
+    .page-guidance-list .page_modal .modal_footer .result {
+      width: 30%; }
+      .page-guidance-list .page_modal .modal_footer .result img {
+        width: 66px;
+        height: auto;
+        margin-right: 10px; }
+      .page-guidance-list .page_modal .modal_footer .result .number-result {
+        font-size: 30px;
+        color: #b14f3a;
+        margin-right: 20px;
+        line-height: 1;
+        font-weight: bold; }
+        .page-guidance-list .page_modal .modal_footer .result .number-result span {
+          font-size: 18px;
+          color: #454545;
+          font-weight: normal; }
+      .page-guidance-list .page_modal .modal_footer .result .result-text {
+        font-size: 18px;
+        color: #5d5d5d; }
+    .page-guidance-list .page_modal .modal_footer .modal_footer_btns {
+      width: 50%;
+      display: flex;
+      flex-direction: row; }
+      .page-guidance-list .page_modal .modal_footer .modal_footer_btns .footer_btn {
+        font-size: 12px;
+        border-radius: 3px; }
+      .page-guidance-list .page_modal .modal_footer .modal_footer_btns .footer_btn_delete {
+        padding: 10px;
+        border: #cccccc solid 1px; }
+      .page-guidance-list .page_modal .modal_footer .modal_footer_btns .footer_btn_select {
+        padding: 10px 50px;
+        background: linear-gradient(to left, #1e7b9c, #166394);
+        margin: 0 10px;
+        color: #fff; }
+      .page-guidance-list .page_modal .modal_footer .modal_footer_btns .footer_btn_add_cond {
+        padding: 10px;
+        background-color: #f2f2f2;
+        border: #cccccc solid 1px; }
