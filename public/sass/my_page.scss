@@ -703,6 +703,11 @@ input::placeholder {
         }
       }
 
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
       .btn-primary.left {
         color: #fff;
         background: linear-gradient(to left, #1e7b9c, #166394);
