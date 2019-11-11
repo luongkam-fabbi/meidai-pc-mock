@@ -28,13 +28,15 @@ p {
     font-weight: bold; }
 
 .section-breadcrumb {
-  margin: 100px 0;
-  border: 1px solid #cccccc; }
-  .section-breadcrumb .my-container img {
-    width: 20px;
-    height: auto;
-    margin: 20px 5px; }
-  .section-breadcrumb .my-container a {
-    font-size: 16px; }
-  .section-breadcrumb .my-container a.active {
-    text-decoration: underline; }
+  margin: 100px 0; }
+  .section-breadcrumb .my-container {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+    .section-breadcrumb .my-container img {
+      width: 20px;
+      height: auto;
+      margin: 20px 5px; }
+    .section-breadcrumb .my-container a {
+      font-size: 16px; }
+    .section-breadcrumb .my-container a.active {
+      text-decoration: underline; }

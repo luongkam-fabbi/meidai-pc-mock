@@ -37,8 +37,9 @@ p {
 
 .section-breadcrumb {
   margin: 100px 0;
-  border: 1px solid #cccccc;
   .my-container {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     img {
       width: 20px;
       height: auto;
