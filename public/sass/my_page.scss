@@ -678,10 +678,7 @@ input::placeholder {
     position: relative;
 
     > img {
-      position: absolute;
       z-index: 1;
-      top: 0;
-      left: 0;
       width: 100%;
       height: auto;
     }
@@ -723,6 +720,8 @@ input::placeholder {
       z-index: 2;
       position: absolute;
       width: 100%;
+      top: 0;
+      left: 0;
     }
   }
 
