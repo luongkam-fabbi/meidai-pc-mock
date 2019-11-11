@@ -35,19 +35,4 @@ $(document).ready(function () {
         arrows: false,
         dotsClass: 'slick-dots-slide'
     });
-
-    const elmScrollTop = '#up-to-top';
-
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 500) { // 300px from top
-            $(elmScrollTop).fadeIn();
-        } else {
-            $(elmScrollTop).fadeOut();
-        }
-    });
-
-    $(elmScrollTop).click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });
 });
