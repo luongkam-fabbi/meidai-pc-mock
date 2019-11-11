@@ -746,6 +746,8 @@ input::placeholder {
     width: 480px;
     margin-top: -250px;
     position: relative; }
+    .page-my-list .section-slide .content .item:nth-child(n+2) {
+      display: none; }
     .page-my-list .section-slide .content button {
       height: 50px;
       width: 200px;

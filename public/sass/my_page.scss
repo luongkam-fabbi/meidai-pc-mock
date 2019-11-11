@@ -885,6 +885,10 @@ input::placeholder {
       margin-top: -250px;
       position: relative;
 
+      .item:nth-child(n+2) {
+        display: none;
+      }
+
       button {
         height: 50px;
         width: 200px;
