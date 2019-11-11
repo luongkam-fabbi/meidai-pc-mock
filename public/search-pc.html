@@ -11,27 +11,43 @@
     <meta name="robots" content="noindex" />
     <meta name="googlebot" content="noindex" />
     <title>名大社</title>
-    <link rel="stylesheet" href="assets/css/lib/fontawesome.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/lib/yakuhanjp.min.css" />
-    <link rel="stylesheet" href="assets/css/lib/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/css/lib/yakuhanjp.min.css"/>
+    <link rel="stylesheet" href="assets/css/lib/materialdesignicons.min.css"/>
     <link href="assets/css/application.css" rel="stylesheet" media="all" type="text/css" />
     <link href="assets/css/common.css" rel="stylesheet" media="all" type="text/css" />
     <link href="assets/css/flex.css" rel="stylesheet" media="all" type="text/css" />
     <link href="assets/css/search-pc.css" rel="stylesheet" media="all" type="text/css" />
-    <script src="assets/js/lib/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/search-pc.js"></script>
 </head>
 
 <body>
     <div class="page-search-pc">
-        <section class="menu">
-            <div class="list-menu">
-                <button>企業を探す</button>
-                <button>説明会を探す</button>
-                <button>フィードを探す</button>
+        <section>
+            <div class="tab-set">
+                <div class="tab-head flex__center__end">
+                    <!-- Tab 1 -->
+                    <input type="radio" name="tab-set" id="tab1" aria-controls="find-company" checked>
+                    <label for="tab1">企業を探す</label>
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tab-set" id="tab2" aria-controls="find-meeting">
+                    <label for="tab2">説明会を探す</label>
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tab-set" id="tab3" aria-controls="find-source">
+                    <label for="tab3">フィードを探す</label>
+                </div>
+                <div class="tab-panels">
+                    <section id="find-company" class="tab-panel">
+                    </section>
+                    <section id="find-meeting" class="tab-panel">
+                    </section>
+                    <section id="find-source" class="tab-panel">
+                    </section>
+                </div>
             </div>
         </section>
+
         <section class="search my-container">
             <div class="top-search ">
                 <div class="spe-search">
@@ -107,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="button-search">
+            <div class="button-search flex__between__center">
                 <button class="btn-left flex__center__center">
                     検索する
                 </button>
@@ -161,11 +177,13 @@
                         </div>
                     </div>
         </section>
-        <section class="end">
-            <div class="link-page">
-                <a href='' class="active">TOP</a>
-                <img src="assets/images/top-screen/arrow-right-black.png" alt="no image">
-                <a href="">企業を探す</a>
+        <section class="section-breadcrumb">
+            <div class="my-container">
+                <div class="link-page flex__start__center">
+                    <a href='#' class="active">TOP</a>
+                    <img src="assets/images/arrow-right-black.png" alt="no image">
+                    <a href="">企業を探す</a>
+                </div>
             </div>
         </section>
     </div>

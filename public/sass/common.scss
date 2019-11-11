@@ -8,3 +8,51 @@
 .sp-content {
   display: none;
 }
+
+p {
+  font-size: 12px;
+}
+
+#up-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 300px;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  background: #202020;
+  z-index: 9999;
+
+  img {
+    width: 15px;
+    height: auto;
+  }
+
+  p {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.section-breadcrumb {
+  margin: 100px 0;
+  .my-container {
+    .link-page {
+      padding: 0 20px;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+    }
+    img {
+      width: 20px;
+      height: auto;
+      margin: 20px 5px;
+    }
+    a {
+      font-size: 16px;
+    }
+    a.active {
+      text-decoration: underline;
+    }
+  }
+}
