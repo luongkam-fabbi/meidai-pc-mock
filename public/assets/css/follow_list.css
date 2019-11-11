@@ -99,4 +99,5 @@
       .page-follow-list .section-foot-slide .slick-list .list-items .list-items-text {
         position: absolute;
         right: 10px;
-        top: 10px; }
+        top: 10px;
+        width: 16%; }
