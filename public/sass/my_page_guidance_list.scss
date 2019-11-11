@@ -18,6 +18,10 @@
         border-bottom: 1px solid #cccccc;
       }
 
+      button {
+        padding-right: 5px;
+      }
+
       div:nth-child(1) {
         padding: 20px 20px 10px 20px;
       }
@@ -81,9 +85,17 @@
         background: #fff;
         border: 1px solid #cccccc;
         font-weight: bold;
+
+        .arrow-down {
+          width: 7px;
+          height: auto;
+          position: absolute;
+          bottom: -9px;
+          left: 50%;
+        }
       }
 
-      .tag-right.active::before{
+      .tag-right.active::before {
         content: "";
         position: absolute;
         right: 45%;
@@ -97,6 +109,10 @@
         border: none;
         color: #fff;
         background: #b14f3a;
+
+        .arrow-down {
+          display: none;
+        }
       }
 
       .left {

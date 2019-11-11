@@ -12,6 +12,8 @@
     padding: 10px 20px;
     background: #f9fafa;
     border-bottom: 1px solid #cccccc; }
+  .page-my-page-guidance-list .main .filter button {
+    padding-right: 5px; }
   .page-my-page-guidance-list .main .filter div:nth-child(1) {
     padding: 20px 20px 10px 20px; }
   .page-my-page-guidance-list .main .filter div:last-child {
@@ -57,6 +59,12 @@
     background: #fff;
     border: 1px solid #cccccc;
     font-weight: bold; }
+    .page-my-page-guidance-list .main .content .tag-right .arrow-down {
+      width: 7px;
+      height: auto;
+      position: absolute;
+      bottom: -9px;
+      left: 50%; }
   .page-my-page-guidance-list .main .content .tag-right.active::before {
     content: "";
     position: absolute;
@@ -69,6 +77,8 @@
     border: none;
     color: #fff;
     background: #b14f3a; }
+    .page-my-page-guidance-list .main .content .tag-right.active .arrow-down {
+      display: none; }
   .page-my-page-guidance-list .main .content .left {
     flex: 1;
     margin-right: 20px; }
