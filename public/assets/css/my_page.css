@@ -608,6 +608,9 @@ input::placeholder {
         margin-right: 10px;
         height: auto;
         width: 30px; }
+    .page-my-list .section-welcome .btn-container p {
+      font-size: 20px;
+      font-weight: bold; }
     .page-my-list .section-welcome .btn-container .btn-primary.left {
       color: #fff;
       background: linear-gradient(to left, #1e7b9c, #166394);
