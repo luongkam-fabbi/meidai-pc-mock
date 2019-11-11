@@ -49,7 +49,7 @@
       position: relative; }
       .page-follow-list .section-foot-slide .intro img {
         position: absolute;
-        top: -86px;
+        top: -90.5px;
         width: 120px;
         height: auto; }
       .page-follow-list .section-foot-slide .intro h3 {
@@ -99,4 +99,5 @@
       .page-follow-list .section-foot-slide .slick-list .list-items .list-items-text {
         position: absolute;
         right: 10px;
-        top: 10px; }
+        top: 10px;
+        width: 16%; }
