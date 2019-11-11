@@ -7,7 +7,10 @@
 .sp-content {
   display: none; }
 
-.page-my-list #up-to-top {
+p {
+  font-size: 12px; }
+
+#up-to-top {
   cursor: pointer;
   position: fixed;
   right: 0;
@@ -17,9 +20,9 @@
   padding: 20px;
   background: #202020;
   z-index: 9999; }
-  .page-my-list #up-to-top img {
+  #up-to-top img {
     width: 15px;
     height: auto; }
-  .page-my-list #up-to-top p {
+  #up-to-top p {
     color: #fff;
     font-weight: bold; }
