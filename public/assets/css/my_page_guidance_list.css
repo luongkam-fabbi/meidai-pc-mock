@@ -1,0 +1,69 @@
+.page-my-page-guidance-list .main h1.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0; }
+
+.page-my-page-guidance-list .main .filter {
+  flex: 1;
+  margin-right: 50px;
+  border: 1px solid #cccccc; }
+  .page-my-page-guidance-list .main .filter div, .page-my-page-guidance-list .main .filter button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #f9fafa;
+    border-bottom: 1px solid #cccccc; }
+  .page-my-page-guidance-list .main .filter div:nth-child(1) {
+    padding: 20px 20px 10px 20px; }
+  .page-my-page-guidance-list .main .filter div:last-child {
+    padding: 20px;
+    border-bottom: none; }
+  .page-my-page-guidance-list .main .filter div.active {
+    background: #eceded; }
+  .page-my-page-guidance-list .main .filter h3 {
+    font-size: 20px; }
+  .page-my-page-guidance-list .main .filter p {
+    font-size: 16px; }
+  .page-my-page-guidance-list .main .filter img {
+    width: 20px;
+    height: auto; }
+
+.page-my-page-guidance-list .main .content {
+  flex: 4;
+  border: 1px solid #cccccc;
+  padding: 20px; }
+  .page-my-page-guidance-list .main .content .left {
+    flex: 1;
+    margin-right: 20px; }
+    .page-my-page-guidance-list .main .content .left button {
+      margin-top: 10px;
+      font-size: 14px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc; }
+  .page-my-page-guidance-list .main .content .right {
+    flex: 3; }
+    .page-my-page-guidance-list .main .content .right .div-head img {
+      width: 55px;
+      height: auto;
+      border: 1px solid #cccccc; }
+    .page-my-page-guidance-list .main .content .right .div-head > div {
+      margin-left: 10px; }
+    .page-my-page-guidance-list .main .content .right .div-head p {
+      font-size: 20px;
+      font-weight: bold; }
+    .page-my-page-guidance-list .main .content .right .div-head span {
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      padding: 0 5px; }
+    .page-my-page-guidance-list .main .content .right .div-address {
+      margin-top: 20px; }
+      .page-my-page-guidance-list .main .content .right .div-address img {
+        width: 20px;
+        height: auto;
+        margin-right: 20px; }
+    .page-my-page-guidance-list .main .content .right .div-tag {
+      margin-top: 20px; }
+      .page-my-page-guidance-list .main .content .right .div-tag img {
+        width: 20px;
+        height: auto;
+        margin-right: 20px; }
