@@ -590,10 +590,7 @@ input::placeholder {
 .page-my-list .section-welcome {
   position: relative; }
   .page-my-list .section-welcome > img {
-    position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto; }
   .page-my-list .section-welcome .btn-container {
@@ -611,6 +608,9 @@ input::placeholder {
         margin-right: 10px;
         height: auto;
         width: 30px; }
+    .page-my-list .section-welcome .btn-container p {
+      font-size: 20px;
+      font-weight: bold; }
     .page-my-list .section-welcome .btn-container .btn-primary.left {
       color: #fff;
       background: linear-gradient(to left, #1e7b9c, #166394);
@@ -622,7 +622,9 @@ input::placeholder {
   .page-my-list .section-welcome .wrap {
     z-index: 2;
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    top: 0;
+    left: 0; }
 
 .page-my-list .section-main-slide {
   background: #edf2f1;
@@ -746,6 +748,8 @@ input::placeholder {
     width: 480px;
     margin-top: -250px;
     position: relative; }
+    .page-my-list .section-slide .content .item:nth-child(n+2) {
+      display: none; }
     .page-my-list .section-slide .content button {
       height: 50px;
       width: 200px;
@@ -763,23 +767,6 @@ input::placeholder {
     .page-my-list .section-slide .content p {
       margin: 25px 0;
       font-size: 16px; }
-
-.page-my-list #up-to-top {
-  cursor: pointer;
-  position: fixed;
-  right: 0;
-  bottom: 300px;
-  height: 20px;
-  width: 20px;
-  padding: 20px;
-  background: #202020;
-  z-index: 9999; }
-  .page-my-list #up-to-top img {
-    width: 15px;
-    height: auto; }
-  .page-my-list #up-to-top p {
-    color: #fff;
-    font-weight: bold; }
 
 /* Tablet */
 @media only screen and (max-width: 1280px) {

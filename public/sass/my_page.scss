@@ -678,10 +678,7 @@ input::placeholder {
     position: relative;
 
     > img {
-      position: absolute;
       z-index: 1;
-      top: 0;
-      left: 0;
       width: 100%;
       height: auto;
     }
@@ -706,6 +703,11 @@ input::placeholder {
         }
       }
 
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
       .btn-primary.left {
         color: #fff;
         background: linear-gradient(to left, #1e7b9c, #166394);
@@ -723,6 +725,8 @@ input::placeholder {
       z-index: 2;
       position: absolute;
       width: 100%;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -885,6 +889,10 @@ input::placeholder {
       margin-top: -250px;
       position: relative;
 
+      .item:nth-child(n+2) {
+        display: none;
+      }
+
       button {
         height: 50px;
         width: 200px;
@@ -909,30 +917,6 @@ input::placeholder {
         margin: 25px 0;
         font-size: 16px;
       }
-    }
-  }
-}
-
-.page-my-list {
-  #up-to-top {
-    cursor: pointer;
-    position: fixed;
-    right: 0;
-    bottom: 300px;
-    height: 20px;
-    width: 20px;
-    padding: 20px;
-    background: #202020;
-    z-index: 9999;
-
-    img {
-      width: 15px;
-      height: auto;
-    }
-
-    p {
-      color: #fff;
-      font-weight: bold;
     }
   }
 }
