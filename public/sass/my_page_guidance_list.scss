@@ -52,149 +52,184 @@
     #hover {
       flex: 4;
 
-      > :hover {
+      .content:hover {
         border: 3px solid #b8a182;
         cursor: pointer;
       }
-    }
 
-    .content {
-      border: 1px solid #cccccc;
-      padding: 20px;
-      position: relative;
-      margin-bottom: 30px;
+      .div-not-found {
+        margin: 0 50px 50px;
 
-      .tag-left {
-        position: absolute;
-        top: -1px;
-        left: -1px;
-        padding: 5px 10px;
-        font-size: 14px;
-        color: #fff;
-        background: linear-gradient(to left, #1e7b9c, #166394);
-        font-weight: bold;
+        .top {
+          margin-bottom: 40px;
+          img {
+            width: 60px;
+            height: auto;
+            margin-right: 20px;
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+
+        .bottom {
+          background: #f9fafa;
+          padding: 50px 0;
+
+          img {
+            width: 12px;
+            height: auto;
+            margin-right: 10px;
+          }
+
+          p {
+            line-height: 20px;
+            font-size: 20px;
+            border-bottom: 1px solid #191919;
+          }
+        }
       }
 
-      .tag-right {
-        position: absolute;
-        top: -15px;
-        right: -10px;
-        padding: 5px 20px;
-        font-size: 16px;
-        color: #000;
-        background: #fff;
+      .content {
         border: 1px solid #cccccc;
-        font-weight: bold;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 30px;
 
-        .arrow-down {
-          width: 7px;
-          height: auto;
+        .tag-left {
           position: absolute;
-          bottom: -9px;
-          left: 50%;
-        }
-      }
-
-      .tag-right.active::before {
-        content: "";
-        position: absolute;
-        right: 45%;
-        bottom: -20%;
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 8px solid #b14f3a;
-      }
-
-      .tag-right.active {
-        border: none;
-        color: #fff;
-        background: #b14f3a;
-
-        .arrow-down {
-          display: none;
-        }
-      }
-
-      .left {
-        flex: 1;
-        margin-right: 20px;
-
-        button {
-          margin-top: 10px;
+          top: -1px;
+          left: -1px;
+          padding: 5px 10px;
           font-size: 14px;
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #cccccc;
-        }
-      }
-
-      .right {
-        flex: 3;
-
-        h3 {
-          font-size: 20px;
+          color: #fff;
+          background: linear-gradient(to left, #1e7b9c, #166394);
           font-weight: bold;
         }
 
-        .div-head {
-          img {
-            width: 55px;
+        .tag-right {
+          position: absolute;
+          top: -15px;
+          right: -10px;
+          padding: 5px 20px;
+          font-size: 16px;
+          color: #000;
+          background: #fff;
+          border: 1px solid #cccccc;
+          font-weight: bold;
+
+          .arrow-down {
+            width: 7px;
             height: auto;
+            position: absolute;
+            bottom: -9px;
+            left: 50%;
+          }
+        }
+
+        .tag-right.active::before {
+          content: "";
+          position: absolute;
+          right: 45%;
+          bottom: -20%;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-right: 8px solid #b14f3a;
+        }
+
+        .tag-right.active {
+          border: none;
+          color: #fff;
+          background: #b14f3a;
+
+          .arrow-down {
+            display: none;
+          }
+        }
+
+        .left {
+          flex: 1;
+          margin-right: 20px;
+
+          button {
+            margin-top: 10px;
+            font-size: 14px;
+            width: 100%;
+            padding: 10px;
             border: 1px solid #cccccc;
           }
-
-          > div {
-            margin-left: 10px;
-          }
-
-          span {
-            border: 1px solid #cccccc;
-            border-radius: 3px;
-            padding: 0 5px;
-          }
         }
 
-        .div-address {
-          margin-top: 20px;
+        .right {
+          flex: 3;
 
-          img {
-            width: 15px;
-            height: auto;
-            margin-right: 20px;
-          }
-        }
-
-        .div-tag {
-          margin-top: 10px;
-
-          img {
-            width: 18px;
-            height: auto;
-            margin-right: 20px;
+          h3 {
+            font-size: 20px;
+            font-weight: bold;
           }
 
-          span {
-            padding: 2px 10px;
-            border: 1px solid #cccccc;
-            border-radius: 10px;
-            margin-right: 5px;
+          .div-head {
+            img {
+              width: 55px;
+              height: auto;
+              border: 1px solid #cccccc;
+            }
+
+            > div {
+              margin-left: 10px;
+            }
+
+            span {
+              border: 1px solid #cccccc;
+              border-radius: 3px;
+              padding: 0 5px;
+            }
           }
-        }
 
-        hr {
-          width: 20px;
-          margin: 10px 0;
-        }
+          .div-address {
+            margin-top: 20px;
 
-        .description {
-          p {
-            margin-top: 5px;
-            display: block;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            img {
+              width: 15px;
+              height: auto;
+              margin-right: 20px;
+            }
+          }
+
+          .div-tag {
+            margin-top: 10px;
+
+            img {
+              width: 18px;
+              height: auto;
+              margin-right: 20px;
+            }
+
+            span {
+              padding: 2px 10px;
+              border: 1px solid #cccccc;
+              border-radius: 10px;
+              margin-right: 5px;
+            }
+          }
+
+          hr {
+            width: 20px;
+            margin: 10px 0;
+          }
+
+          .description {
+            p {
+              margin-top: 5px;
+              display: block;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
           }
         }
       }
