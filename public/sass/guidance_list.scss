@@ -301,14 +301,12 @@
       }
     }
   }
-
+  .group-list-items {
   .wrap-item {
     background-color: #E7EAEB;
     width: 100%;
     margin-top: 39px;
-  }
 
-  .group-list-items {
     .item {
       position: relative;
       width: 100%;
@@ -533,6 +531,7 @@
       height: 100px;
     }
   }
+}
 }
 
 /*  */
