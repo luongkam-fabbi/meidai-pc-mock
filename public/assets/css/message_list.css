@@ -1,0 +1,258 @@
+.page-message-list .main .message_page_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; }
+  .page-message-list .main .message_page_header .search_section {
+    margin: 40px 0;
+    position: relative;
+    width: 40%; }
+    .page-message-list .main .message_page_header .search_section #search_input {
+      border: 1px solid #dadada;
+      border-radius: 3px;
+      padding: 10px;
+      width: 100%; }
+    .page-message-list .main .message_page_header .search_section .search_icon {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 20px;
+      height: 20px;
+      background: url("../images/message_list/search_icon.png") no-repeat;
+      background-size: contain;
+      cursor: text; }
+  .page-message-list .main .message_page_header h1.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px 0; }
+
+.page-message-list .main .filter {
+  flex: 1; }
+  .page-message-list .main .filter div, .page-message-list .main .filter button {
+    width: 100%;
+    padding: 10px 20px; }
+  .page-message-list .main .filter button {
+    padding-right: 10px;
+    margin-bottom: 1px; }
+    .page-message-list .main .filter button .message_numbs {
+      background-color: #cd0606;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 3px 5px;
+      border-radius: 5px;
+      margin-left: 5px; }
+    .page-message-list .main .filter button:hover {
+      background-color: #f9f9f9; }
+  .page-message-list .main .filter button.active {
+    background-color: #f4f4f4;
+    position: relative;
+    height: auto; }
+    .page-message-list .main .filter button.active p {
+      font-weight: bold;
+      color: #000; }
+    .page-message-list .main .filter button.active:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, #4b8fae, #0f517c); }
+  .page-message-list .main .filter h3 {
+    font-size: 20px; }
+  .page-message-list .main .filter p {
+    font-size: 16px; }
+  .page-message-list .main .filter img {
+    width: 20px;
+    height: auto; }
+
+.page-message-list .main .message_list_conainer {
+  flex: 4;
+  background-color: #f4f4f4;
+  max-width: 80%; }
+  .page-message-list .main .message_list_conainer .scroll_message {
+    padding: 20px;
+    padding-bottom: 0;
+    width: 100%;
+    max-height: 610px;
+    overflow-y: scroll; }
+    .page-message-list .main .message_list_conainer .scroll_message:-webkit-scrollbar {
+      display: block; }
+    .page-message-list .main .message_list_conainer .scroll_message .message_item {
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .page-message-list .main .message_list_conainer .scroll_message .message_item .message_image {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #e5e5e5;
+        border-radius: 100%; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_image img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%; }
+      .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content {
+        width: 85%;
+        margin-left: 30px;
+        border: 1px solid #e5e5e5;
+        position: relative;
+        padding: 10px 20px;
+        cursor: pointer; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content > :not(.bookmark_btn) {
+          opacity: 0.7; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content .arrow_left {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 20%;
+          left: -20px;
+          background: url("../images/message_list/arrow_left.jpg") no-repeat;
+          background-size: contain; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content .bookmark_btn {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          width: 20px;
+          height: 32px;
+          background: url("../images/message_list/bookmark.svg") no-repeat;
+          background-size: contain; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content .bookmark_btn.active {
+          background: url("../images/message_list/bookmark_red.svg") no-repeat;
+          background-size: contain; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content .message_time {
+          font-size: 10px; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content .message_title {
+          font-size: 15px;
+          padding: 10px 0;
+          font-weight: bold; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content .message_footer {
+          font-size: 12px; }
+      .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content.active {
+        background-color: #fff;
+        opacity: 1; }
+        .page-message-list .main .message_list_conainer .scroll_message .message_item .message_content.active .arrow_left {
+          background: url("../images/message_list/arrow_left_active.jpg") no-repeat;
+          background-size: contain; }
+    .page-message-list .main .message_list_conainer .scroll_message .has_chat_active {
+      display: none; }
+    .page-message-list .main .message_list_conainer .scroll_message .show_new_message {
+      display: none;
+      background-color: #fff;
+      margin-top: 10px;
+      padding: 20px;
+      border: 1px solid #e6e6e6;
+      position: relative; }
+      .page-message-list .main .message_list_conainer .scroll_message .show_new_message .arrow_up {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 5%;
+        top: -30px;
+        background: url("../images/message_list/arrow-up.png") no-repeat;
+        background-size: contain; }
+      .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content {
+        margin-right: 10px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item {
+          padding-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end; }
+          .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_time {
+            font-size: 10px;
+            padding-bottom: 5px;
+            color: #474747; }
+          .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_text {
+            align-self: flex-end;
+            padding: 10px;
+            font-size: 12px;
+            color: #fff;
+            background-color: #2e89ab;
+            border-radius: 3px;
+            position: relative;
+            width: fit-content; }
+            .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_text .arrow_right {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 5%;
+              right: -20px;
+              background: url("../images/message_list/arrow-right-blue.png") no-repeat;
+              background-size: contain; }
+            .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_text .user_chat_image {
+              max-width: 80px;
+              max-height: 80px; }
+        .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item.guess_mess {
+          align-self: flex-start; }
+          .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item.guess_mess .chat_item_text {
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #dfdfdf;
+            align-self: flex-start; }
+            .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item.guess_mess .chat_item_text .arrow_right {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              top: 5%;
+              left: -20px;
+              background: url("../images/message_list/arrow_left.jpg") no-repeat;
+              background-size: contain; }
+    .page-message-list .main .message_list_conainer .scroll_message .show_new_message.active {
+      display: block; }
+  .page-message-list .main .message_list_conainer .new_message_editor {
+    display: none;
+    margin: 0 20px 50px 20px;
+    border: 1px solid #dfdfdf; }
+    .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #dfdfdf; }
+      .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header .mes_editor_right {
+        display: flex;
+        flex-direction: row; }
+        .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header .mes_editor_right .mes_editor_right {
+          margin-right: 10px;
+          cursor: pointer; }
+        .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header .mes_editor_right #pdf_btn {
+          font-weight: normal;
+          background-color: #cd0606;
+          font-size: 9px;
+          color: #fff;
+          border-radius: 3px;
+          padding: 4px 3px;
+          width: 22px;
+          height: 22px;
+          text-align: center; }
+        .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header .mes_editor_right #image_btn {
+          width: 24px;
+          height: 24px;
+          background: url("../images/message_list/gallary_icon.png") no-repeat;
+          background-size: 24px; }
+        .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header .mes_editor_right #template_btn {
+          width: 24px;
+          height: 24px;
+          background: url("../images/message_list/playlist_icon.png") no-repeat;
+          background-size: 24px; }
+      .page-message-list .main .message_list_conainer .new_message_editor .message_editor_header .send_btn {
+        padding: 5px 10px;
+        background: linear-gradient(to left, #1e799c, #1b7198);
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px; }
+    .page-message-list .main .message_list_conainer .new_message_editor .editor_input {
+      padding: 10px;
+      width: 100%;
+      height: 300px;
+      background-color: #fff;
+      resize: none;
+      font-size: 14px; }
+  .page-message-list .main .message_list_conainer .new_message_editor.active {
+    display: block; }

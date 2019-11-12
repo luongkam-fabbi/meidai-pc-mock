@@ -1,3 +1,36 @@
+.page-my-page-guidance-list .main section.detail-content {
+  display: none;
+  border-top: 1px solid #cccccc; }
+  .page-my-page-guidance-list .main section.detail-content div {
+    font-size: 14px; }
+  .page-my-page-guidance-list .main section.detail-content div.flex__center__stretch {
+    border-bottom: 1px solid #cccccc; }
+  .page-my-page-guidance-list .main section.detail-content .left {
+    flex: 1;
+    padding: 20px;
+    background: #f9fafa;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    font-weight: bold; }
+  .page-my-page-guidance-list .main section.detail-content .right {
+    flex: 5;
+    padding: 20px;
+    border-right: 1px solid #cccccc; }
+    .page-my-page-guidance-list .main section.detail-content .right #map {
+      height: 300px; }
+
+.page-my-page-guidance-list .main .section-top img {
+  width: 20px;
+  height: auto; }
+
+.page-my-page-guidance-list .main .section-top button {
+  padding: 5px 10px;
+  border: 1px solid #595959;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  display: none; }
+
 .page-my-page-guidance-list .main h1.title {
   font-size: 28px;
   font-weight: bold;
