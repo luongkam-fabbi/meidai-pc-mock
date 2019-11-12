@@ -1,5 +1,52 @@
 .page-my-page-guidance-list {
   .main {
+    section.detail-content {
+      display: none;
+      border-top: 1px solid #cccccc;
+
+      div {
+        font-size: 14px;
+      }
+
+      div.flex__center__stretch {
+        border-bottom: 1px solid #cccccc;
+      }
+
+      .left {
+        flex: 1;
+        padding: 20px;
+        background: #f9fafa;
+        border-right: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        font-weight: bold;
+      }
+
+      .right {
+        flex: 5;
+        padding: 20px;
+        border-right: 1px solid #cccccc;
+        #map {
+          height: 300px;
+        }
+      }
+    }
+
+    .section-top {
+      img {
+        width: 20px;
+        height: auto;
+      }
+
+      button {
+        padding: 5px 10px;
+        border: 1px solid #595959;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: bold;
+        display: none;
+      }
+    }
+
     h1.title {
       font-size: 28px;
       font-weight: bold;
@@ -62,6 +109,7 @@
 
         .top {
           margin-bottom: 40px;
+
           img {
             width: 60px;
             height: auto;
