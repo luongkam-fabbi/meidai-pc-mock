@@ -22,6 +22,8 @@
     <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
     <script src="assets/js/common.js"></script>
+    <script src="assets/js/my_page_guidance_list.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </head>
 
 <body>
@@ -31,7 +33,10 @@
 
         <section class="main">
             <div class="my-container">
-                <h1 class="title">予約した説明会</h1>
+                <section class="section-top flex__between__center">
+                    <h1 class="title">予約した説明会</h1>
+                    <button class="btn-back flex__center__center"><img src="assets/images/arrow-left-black.png"/>検索一覧に戻る</button>
+                </section>
                 <div class="flex__start__start">
                     <div class="filter">
                         <div>
@@ -174,6 +179,48 @@
                                 </div>
                             </div>
                         </div>
+                        <section class="detail-content">
+                            <div class="flex__center__stretch">
+                                <div class="left">
+                                    日程
+                                </div>
+                                <div class="right">
+                                    2019年5月
+                                </div>
+                            </div>
+                            <div class="flex__center__stretch">
+                                <div class="left">
+                                    時間
+                                </div>
+                                <div class="right">
+                                    10：00〜13：00
+                                </div>
+                            </div>
+                            <div class="flex__center__stretch">
+                                <div class="left">
+                                    場所
+                                </div>
+                                <div class="right">
+                                    山梨県立図書館（かいぶらり）交流ルーム（山梨県甲府市北口2丁目8-1）
+                                </div>
+                            </div>
+                            <div class="flex__center__stretch">
+                                <div class="left">
+                                    持ち物
+                                </div>
+                                <div class="right">
+                                    筆記用具
+                                </div>
+                            </div>
+                            <div class="flex__center__stretch">
+                                <div class="left">
+                                    アクセスマップ
+                                </div>
+                                <div class="right">
+                                    <div id="map"></div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

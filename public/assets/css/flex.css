@@ -35,6 +35,15 @@
   align-items: flex-end;
 }
 
+.flex__center__stretch {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
 /* justify-content: start */
 .flex__start__start {
   display: -ms-flexbox;
