@@ -46,12 +46,7 @@ p {
   max-width: 1024px;
   background: #fff;
   margin: 0 auto; }
-  .morecontent span {
-    display: none;
-  }
-  .morelink {
-      display: block;
-  }
+
 @media only screen and (max-width: 1300px) {
   .btnx2 .btn {
     font-size: 12px !important; }
