@@ -228,6 +228,12 @@
                 .user_chat_image{
                   max-width: 80px;
                   max-height: 80px;
+                };
+                .user_pdf_file{
+                  text-decoration: underline;
+                  &:hover{
+                    color:#cd0606;
+                  }
                 }
               }
             }

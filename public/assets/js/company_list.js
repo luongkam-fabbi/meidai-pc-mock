@@ -24,6 +24,12 @@ $(document).ready(function () {
     togleModal(false);
   });
 
+  $('.page_modal').click(function(e){
+    if ( e.target === this ){
+      togleModal(false);
+    }
+  });
+
   $('.checkbox1').click(function(){
     const checkBoxCheckAll = $('#checkbox_input_field_1_all');
     const checkBoxChecked = $('.checkbox1:checked');
