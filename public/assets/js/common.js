@@ -14,21 +14,9 @@ $(document).ready(function () {
         return false;
     });
 });
-// function moreLoad() {
-//     var dots = document.getElementById("dots");
-//     var moreText = document.getElementById("more");
-
-//     if (dots.style.display === "none") {
-//         dots.style.display = "inline";
-//         moreText.style.display = "none";
-//     } else {
-//         dots.style.display = "none";
-//         moreText.style.display = "inline";
-//     }
-// }
+// Button More
 $(document).ready(function() {
-    // Configure/customize these variables.
-    var showChar = 100;  // How many characters are shown by default
+    var showChar = 100;  
     var ellipsestext = "...";
     var moretext = "続きを読む &nbsp;";
     var moreimage = "assets/images/extend.png";
