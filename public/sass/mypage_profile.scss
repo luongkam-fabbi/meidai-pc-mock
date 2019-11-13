@@ -1,0 +1,199 @@
+.page-my-page-guidance-list {
+  .main {
+    section.detail-content {
+      display: none;
+      border-top: 1px solid #cccccc;
+
+      div {
+        font-size: 14px;
+      }
+
+      div.flex__center__stretch {
+        border-bottom: 1px solid #cccccc;
+      }
+
+      .left {
+        flex: 1;
+        padding: 20px;
+        background: #f9fafa;
+        border-right: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        font-weight: bold;
+      }
+
+      .right {
+        flex: 5;
+        padding: 20px;
+        border-right: 1px solid #cccccc;
+        #map {
+          height: 300px;
+        }
+      }
+    }
+
+    .section-top {
+      img {
+        width: 20px;
+        height: auto;
+      }
+
+      button {
+        padding: 5px 10px;
+        border: 1px solid #595959;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: bold;
+        display: none;
+      }
+    }
+
+    h1.title {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 40px 0;
+    }
+
+    .filter {
+      flex: 1;
+      margin-right: 50px;
+      border: 1px solid #cccccc;
+
+      div, button {
+        width: 100%;
+        padding: 10px 20px;
+        background: #f9fafa;
+        border-bottom: 1px solid #cccccc;
+      }
+
+      button {
+        padding-right: 5px;
+      }
+
+      div:nth-child(1) {
+        padding: 20px 20px 10px 20px;
+      }
+
+      div:last-child {
+        padding: 20px;
+        border-bottom: none;
+      }
+
+      div.active {
+        background: #eceded;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+
+    #mypage_profile_container {
+      flex: 4;
+
+      .content {
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .content_header{
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 20px;
+          &:after{
+            position: absolute;
+            content:'';
+            top:0;
+            left: 0;
+            width:3px;
+            height: 100%;
+            background:linear-gradient(to bottom, #4b8fae, #0f517c) ;
+          }
+          .content_header_text{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 10px;
+          }
+          .content_header_btn{
+            border:1px solid #8d8d8d;
+            padding: 4px 20px;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .pen_icon{
+              width: 20px;
+              height: 20px;
+              background: url('../images/mypage_profile/pen_icon.png') no-repeat;
+              background-size: contain;
+              margin-right: 5px;
+            }
+            .header_btn_text{
+              text-align: center;
+              font-weight: bold;
+              font-size: 17px;
+              }
+          }
+        }
+        .content_items{
+          .content_item{
+            display: flex;
+            flex-direction: row; 
+            width: 100%;
+            border-top: 1px solid #e7e7e7;
+            border-left: 1px solid #e7e7e7;
+            border-right: 1px solid #e7e7e7;
+            .content_item_title{
+              padding: 10px;   
+              background-color: #f5f6f7;
+              width: 20%;
+              font-weight: bold;
+              font-size: 15px;  
+            }
+            .content_item_value{
+              padding:10px;
+              width:100%;
+              font-size: 14px;  
+              font-weight: normal;
+            }
+          }
+          .content_item:first-child{
+            border-top: 1px solid #e7e7e7;
+            border-left: 1px solid #e7e7e7;
+            border-right: 1px solid #e7e7e7;
+          }
+          .content_item:last-child{
+            border-top: 1px solid #e7e7e7;
+            border-bottom: 1px solid #e7e7e7;
+            border-left: 1px solid #e7e7e7;
+            border-right: 1px solid #e7e7e7;
+          }
+        }
+      }
+      .save_section{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .save_btn{
+          width: 30%;
+          border: 1px solid #aeaeae;
+          border-radius: 3px;
+          padding:10px;
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
