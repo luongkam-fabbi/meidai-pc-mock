@@ -102,6 +102,12 @@ $(document).ready(function () {
     $('.tutorial-modal .modal_close_btn').click(function () {
         $('.tutorial-modal').css('display', 'none')
     });
+
+    $('.tutorial-modal').click(function (e) {
+        if (e.target === this) {
+            $('.tutorial-modal').css('display', 'none')
+        }
+    });
 });
 
 // ----------------------------  open modal search -----------------------------
