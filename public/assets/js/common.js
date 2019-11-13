@@ -23,7 +23,7 @@ $(document).ready(function() {
     var lessimage = "assets/images/extend2.png";
     var lesstext = "隠す &nbsp;";
     
-    $('.more').each(function() {
+    $('.more-text').each(function() {
         var content = $(this).html();
         if(content.length > showChar) {
  

@@ -12,7 +12,12 @@
 p {
   font-size: 12px;
 }
-
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: block;
+}
 #up-to-top {
   cursor: pointer;
   position: fixed;
