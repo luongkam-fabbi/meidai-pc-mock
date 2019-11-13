@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page-guidance-list .page_modal {
   display: none;
   position: fixed;
@@ -539,3 +540,87 @@
   .page-guidance-list .page-search-term-date .modal_footer_btns .footer_btn_select {
     font-size: 18px !important;
     padding: 14px 55px !important; }
+
+.page-guidance-list .tutorial-modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0 auto; }
+  .page-guidance-list .tutorial-modal .modal-container {
+    position: relative;
+    max-width: 800px; }
+    .page-guidance-list .tutorial-modal .modal-container .modal_close_btn {
+      cursor: pointer;
+      width: 26px;
+      height: auto;
+      background-size: contain;
+      position: absolute;
+      right: 15px;
+      top: 15px; }
+    .page-guidance-list .tutorial-modal .modal-container .modal-content {
+      padding: 30px; }
+      .page-guidance-list .tutorial-modal .modal-container .modal-content .item:focus {
+        outline: none; }
+      .page-guidance-list .tutorial-modal .modal-container .modal-content h2.title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      .page-guidance-list .tutorial-modal .modal-container .modal-content .step {
+        position: relative;
+        margin-bottom: 10px; }
+        .page-guidance-list .tutorial-modal .modal-container .modal-content .step img {
+          width: 100px;
+          height: auto; }
+        .page-guidance-list .tutorial-modal .modal-container .modal-content .step p {
+          position: absolute;
+          left: 20px;
+          top: 2px;
+          font-size: 20px;
+          font-weight: bold; }
+      .page-guidance-list .tutorial-modal .modal-container .modal-content .slick-dots-tutorial {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px; }
+        .page-guidance-list .tutorial-modal .modal-container .modal-content .slick-dots-tutorial li.slick-active button:before {
+          opacity: .75;
+          color: black; }
+        .page-guidance-list .tutorial-modal .modal-container .modal-content .slick-dots-tutorial li {
+          position: relative;
+          display: inline-block;
+          width: 7px;
+          height: 20px;
+          margin: 0 5px;
+          padding: 0;
+          cursor: pointer; }
+          .page-guidance-list .tutorial-modal .modal-container .modal-content .slick-dots-tutorial li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent; }
+          .page-guidance-list .tutorial-modal .modal-container .modal-content .slick-dots-tutorial li button:before {
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '•';
+            text-align: center;
+            opacity: .25;
+            color: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; }

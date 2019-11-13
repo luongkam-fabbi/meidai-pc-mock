@@ -2,115 +2,408 @@
 <html lang="ja" dir="ltr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="robots" content="noindex" />
-    <meta name="googlebot" content="noindex" />
+    <meta charset="UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="robots" content="noindex"/>
+    <meta name="googlebot" content="noindex"/>
     <title>名大社</title>
-    <link rel="stylesheet" href="assets/css/lib/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/lib/yakuhanjp.min.css" />
-    <link rel="stylesheet" href="assets/css/lib/materialdesignicons.min.css" />
-    <link href="assets/css/company_list.css" rel="stylesheet" media="all" type="text/css" />
-    <link href="assets/css/application.css" rel="stylesheet" media="all" type="text/css" />
-    <link href="assets/css/flex.css" rel="stylesheet" media="all" type="text/css" />
-    <link href="assets/css/common.css" rel="stylesheet" media="all" type="text/css" />
-    <link href="assets/css/guidance_list.css" rel="stylesheet" media="all" type="text/css" />
+    <link rel="stylesheet" href="assets/css/lib/fontawesome.css"/>
+    <link rel="stylesheet" href="assets/css/lib/yakuhanjp.min.css"/>
+    <link rel="stylesheet" href="assets/css/lib/materialdesignicons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/lib/slick.css"/>
+    <link href="assets/css/application.css" rel="stylesheet" media="all" type="text/css"/>
+    <link href="assets/css/flex.css" rel="stylesheet" media="all" type="text/css"/>
+    <link href="assets/css/common.css" rel="stylesheet" media="all" type="text/css"/>
+    <link href="assets/css/guidance_list.css" rel="stylesheet" media="all" type="text/css"/>
+    <link href="assets/css/company_list.css" rel="stylesheet" media="all" type="text/css"/>
     <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/company_list.js"></script>
+    <script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
     <script src="assets/js/common.js"></script>
+    <script src="assets/js/company_list.js"></script>
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Main -->
-        <div class="page-guidance-list">
-            <section class="top-section flex__between__center">
-                <h1 class="title">すべての説明会一覧</h1>
-                <button class="btn-reset flex__around__center">
-                    <img src="assets/images/reset.svg" >
-                    検索条件変更
-                </button>
-            </section>
+<div class="wrapper">
+    <!-- Main -->
+    <div class="page-guidance-list">
+        <section class="tutorial-modal flex__center__center">
+            <div class="modal-container my-container-child">
+                <img class="modal_close_btn" src="assets/images/icon-close1.png"/>
+                <div class="modal-content">
+                    <div class="tutorial-item slide">
+                        <div class="item">
+                            <div class="step">
+                                <p>STEP1</p>
+                                <img src="assets/images/company_list/step.png"/>
+                            </div>
+                            <h2 class="title">学生の声をもとにより使いやすくリニューアル！</h2>
+                            <img src="assets/images/company_list/step1.png">
+                        </div>
+                        <div class="item">
+                            <div class="step">
+                                <p>STEP2</p>
+                                <img src="assets/images/company_list/step.png"/>
+                            </div>
+                            <h2 class="title">学生の声をもとにより使いやすくリニューアル！</h2>
+                            <img src="assets/images/company_list/step1.png">
+                        </div>
+                        <div class="item">
+                            <div class="step">
+                                <p>STEP3</p>
+                                <img src="assets/images/company_list/step.png"/>
+                            </div>
+                            <h2 class="title">あなたがフォローした企業の情報が一覧で表示</h2>
+                            <img src="assets/images/company_list/step2.png">
+                        </div>
+                        <div class="item">
+                            <div class="step">
+                                <p>STEP4</p>
+                                <img src="assets/images/company_list/step.png"/>
+                            </div>
+                            <h2 class="title">学生の声をもとにより使いやすくリニューアル！</h2>
+                            <img src="assets/images/company_list/step1.png">
+                        </div>
+                        <div class="item">
+                            <div class="step">
+                                <p>STEP5</p>
+                                <img src="assets/images/company_list/step.png"/>
+                            </div>
+                            <h2 class="title">学生の声をもとにより使いやすくリニューアル！</h2>
+                            <img src="assets/images/company_list/step1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- Search Options -->
-            <div class="search-options flex__center__end">
-                <div class="my-container flex__between__end">
-                    <div class="options-group-items">
-                        <div class="group-selectbox flex__around__end">
-                            <div class="selectbox-items">
-                                <h3 class="title">開催日程:</h3>
-                                <select class="selectbox" name="" id="">
-                                    <option value="">選択する</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div>
-                            <div class="icon-times flex__center__center">×</div>
-                            <div class="selectbox-items">
-                                <h3 class="title">業種:</h3>
-                                <select class="selectbox" name="" id="">
-                                    <option value="">選択する</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div>
-                            <div class="icon-times flex__center__center">×</div>
-                            <div class="selectbox-items">
-                                <h3 class="title">勤務地:</h3>
-                                <select class="selectbox" name="" id="">
-                                    <option value="">選択する</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div>
-                            <div class="icon-times flex__center__center">×</div>
-                            <div class="selectbox-items">
-                                <h3 class="title">特徴:</h3>
-                                <select class="selectbox" name="" id="">
-                                    <option value="">選択する</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
+        <section class="top-section flex__between__center">
+            <h1 class="title">すべての説明会一覧</h1>
+            <button class="btn-reset flex__around__center">
+                <img src="assets/images/reset.svg">
+                検索条件変更
+            </button>
+        </section>
+
+        <!-- Search Options -->
+        <div class="search-options flex__center__end">
+            <div class="my-container flex__between__end">
+                <div class="options-group-items">
+                    <div class="group-selectbox flex__around__end">
+                        <div class="selectbox-items">
+                            <h3 class="title">開催日程:</h3>
+                            <select class="selectbox" name="" id="">
+                                <option value="">選択する</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="icon-times flex__center__center">×</div>
+                        <div class="selectbox-items">
+                            <h3 class="title">業種:</h3>
+                            <select class="selectbox" name="" id="">
+                                <option value="">選択する</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="icon-times flex__center__center">×</div>
+                        <div class="selectbox-items">
+                            <h3 class="title">勤務地:</h3>
+                            <select class="selectbox" name="" id="">
+                                <option value="">選択する</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="icon-times flex__center__center">×</div>
+                        <div class="selectbox-items">
+                            <h3 class="title">特徴:</h3>
+                            <select class="selectbox" name="" id="">
+                                <option value="">選択する</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="group-input">
+                        <h3 class="title">キーワード：</h3>
+                        <div class="form-input flex__center__start">
+                            <label for="input-search " class="icon flex__center__center">
+                                <img src="assets/images/search-black.svg">
+                            </label>
+                            <input type="text" id="input-search" placeholder="会社名などのキーワードを入力しよう">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-search flex__center__center">
+                    <img src="assets/images/search-light.svg">
+                    検索する
+                </button>
+            </div>
+        </div>
+
+        <!-- Result and Pagination -->
+        <div class="result-pagination flex__between__center">
+            <div class="result flex__start__center">
+                <div class="flex__center__center">
+                    <img src="assets/images/result.png">
+                    <div class="number-result flex__center__end">
+                        380
+                        <span>社</span>
+                    </div>
+                </div>
+                <div class="result-text">380件中 31件～60件を表示</div>
+            </div>
+            <div class="pagination flex__end__center">
+                    <span class="pagi-items pagi-prev">
+                        &#60;
+                    </span>
+                <span class="pagi-items">1</span>
+                <span class="pagi-items">2</span>
+                <span class="pagi-items">3</span>
+                <span class="pagi-items active">4</span>
+                <span class="pagi-items">5</span>
+                <span class="pagi-items">6</span>
+                <span class="pagi-items">7</span>
+                <span class="pagi-items">8</span>
+                <span class="pagi-items">9</span>
+                <span class="pagi-items">10</span>
+                <span class="more">...</span>
+                <span class="pagi-items text">最後</span>
+                <span class="pagi-items pagi-next">
+                        &#62;
+                    </span>
+            </div>
+        </div>
+
+        <!-- Menu lever 2 -->
+        <div class="menu-lever-2">
+            <div class="menu-list flex__start__center">
+                <a href="#" class="menu2-items active flex__center__center">すべて</a>
+                <a href="#" class="menu2-items flex__center__center">
+                    <span class="sp">新着</span>
+                    <span class="pc">1週間以内の説明会</span>
+                </a>
+                <a href="#" class="menu2-items flex__center__center">
+                    <span class="sp">ピックアップ</span>
+                    <span class="pc">3週間以内の説明会</span>
+                </a>
+            </div>
+        </div>
+        <!-- List Items -->
+        <div class="group-list-items flex__between__center flex__wrap">
+            <div class="wrap-item">
+                <div class="item my-container">
+                    <div class="bookmark">
+                        <button></button>
+                        <img src="assets/images/bookmark.png">
+                    </div>
+                    <div class="img-item">
+                        <div class="left-img">
+                            <img src="assets/images/items-image-06.png">
+                            <div class="btnx2">
+                                <!-- <div class="btn-left"> -->
+                                <button class="btn btn-left"
+                                        id="btn_open_modal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
+                                </button>
+                                <button class="btn btn-right" id="btn-open-modal-search">説明会予約</button>
+                                <!-- </div> -->
+                                <!-- <div class="btn-right"></div> -->
                             </div>
                         </div>
-                        <div class="group-input">
-                            <h3 class="title">キーワード：</h3>
-                            <div class="form-input flex__center__start">
-                                <label for="input-search " class="icon flex__center__center">
-                                    <img src="assets/images/search-black.svg" >
-                                </label>
-                                <input type="text" id="input-search" placeholder="会社名などのキーワードを入力しよう">
+                        <div class="right-img">
+                            <p class="title">中小企業のロールモデルとなる</p>
+                            <p class="content more-text">
+                                文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
+                                を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
+                            <!-- <div class="extend">
+                                <p>続きを読む &nbsp;</p>
+                                <img src="assets/images/extend.png" >
+
+                            </div> -->
+                            <div class="mid-right">
+                                <img src="assets/images/icon-feed.png">
+                                <div class="mig-right-right">
+                                    <p>名大テクノロジー株式会社</p>
+                                    <button>IT・ソフトウェア</button>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <img src="assets/images/address.png">
+                                <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
+                            </div>
+                            <div class="tag">
+                                <img src="assets/images/has-tag.png">
+                                <div class="tag-right">
+                                    <button>#転職なし</button>
+                                    <button>##ベンチャー企業</button>
+                                    <button>#20代が活躍</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn-search flex__center__center">
-                        <img src="assets/images/search-light.svg" >
-                        検索する
-                    </button>
                 </div>
             </div>
+            <div class="wrap-item">
+                <div class="item my-container">
+                    <div class="bookmark">
+                        <button></button>
+                        <img src="assets/images/bookmark.png">
+                    </div>
+                    <div class="img-item">
+                        <div class="left-img">
+                            <img src="assets/images/guidance_list/item2.png">
+                            <div class="btnx2">
+                                <!-- <div class="btn-left"> -->
+                                <button class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
+                                </button>
+                                <button class="btn btn-right">説明会予約</button>
+                                <!-- </div> -->
+                                <!-- <div class="btn-right"></div> -->
+                            </div>
+                        </div>
+                        <div class="right-img">
+                            <p class="title">中小企業のロールモデルとなる</p>
+                            <p class="content more-text">
+                                文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
+                                を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
 
+                            <div class="mid-right">
+                                <img src="assets/images/icon-feed.png">
+                                <div class="mig-right-right">
+                                    <p>名大テクノロジー株式会社</p>
+                                    <button>IT・ソフトウェア</button>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <img src="assets/images/address.png">
+                                <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
+                            </div>
+                            <div class="tag">
+                                <img src="assets/images/has-tag.png">
+                                <div class="tag-right">
+                                    <button>#転職なし</button>
+                                    <button>##ベンチャー企業</button>
+                                    <button>#20代が活躍</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-item">
+                <div class="item my-container">
+                    <div class="bookmark">
+                        <button></button>
+                        <img src="assets/images/bookmark.png">
+                    </div>
+                    <div class="img-item">
+                        <div class="left-img">
+                            <img src="assets/images/guidance_list/item3.png">
+                            <div class="btnx2">
+                                <!-- <div class="btn-left"> -->
+                                <button class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
+                                </button>
+                                <button class="btn btn-right">説明会予約</button>
+                                <!-- </div> -->
+                                <!-- <div class="btn-right"></div> -->
+                            </div>
+                        </div>
+                        <div class="right-img">
+                            <p class="title">中小企業のロールモデルとなる</p>
+                            <p class="content more-text">
+                                文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
+                                を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
+
+                            <div class="mid-right">
+                                <img src="assets/images/icon-feed.png">
+                                <div class="mig-right-right">
+                                    <p>名大テクノロジー株式会社</p>
+                                    <button>IT・ソフトウェア</button>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <img src="assets/images/address.png">
+                                <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
+                            </div>
+                            <div class="tag">
+                                <img src="assets/images/has-tag.png">
+                                <div class="tag-right">
+                                    <button>#転職なし</button>
+                                    <button>##ベンチャー企業</button>
+                                    <button>#20代が活躍</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-item">
+                <div class="item my-container">
+                    <div class="bookmark">
+                        <button></button>
+                        <img src="assets/images/bookmark.png">
+                    </div>
+                    <div class="img-item">
+                        <div class="left-img">
+                            <img src="assets/images/guidance_list/item4.png">
+                            <div class="btnx2">
+                                <!-- <div class="btn-left"> -->
+                                <button class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
+                                </button>
+                                <button class="btn btn-right">説明会予約</button>
+                                <!-- </div> -->
+                                <!-- <div class="btn-right"></div> -->
+                            </div>
+                        </div>
+                        <div class="right-img">
+                            <p class="title">中小企業のロールモデルとなる</p>
+                            <p class="content more-text">
+                                文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
+                                を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
+
+                            <div class="mid-right">
+                                <img src="assets/images/icon-feed.png">
+                                <div class="mig-right-right">
+                                    <p>名大テクノロジー株式会社</p>
+                                    <button>IT・ソフトウェア</button>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <img src="assets/images/address.png">
+                                <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
+                            </div>
+                            <div class="tag">
+                                <img src="assets/images/has-tag.png">
+                                <div class="tag-right">
+                                    <button>#転職なし</button>
+                                    <button>##ベンチャー企業</button>
+                                    <button>#20代が活躍</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Result and Pagination -->
             <div class="result-pagination flex__between__center">
                 <div class="result flex__start__center">
-                    <div class="flex__center__center">
-                        <img src="assets/images/result.png" >
-                        <div class="number-result flex__center__end">
-                            380
-                            <span>社</span>
-                        </div>
+                    <img src="assets/images/result.png">
+                    <div class="number-result flex__center__end">
+                        380
+                        <span>社</span>
                     </div>
                     <div class="result-text">380件中 31件～60件を表示</div>
                 </div>
                 <div class="pagination flex__end__center">
-                    <span class="pagi-items pagi-prev">
-                        &#60;
-                    </span>
+                        <span class="pagi-items pagi-prev">
+                            &#60;
+                        </span>
                     <span class="pagi-items">1</span>
                     <span class="pagi-items">2</span>
                     <span class="pagi-items">3</span>
@@ -124,483 +417,247 @@
                     <span class="more">...</span>
                     <span class="pagi-items text">最後</span>
                     <span class="pagi-items pagi-next">
-                        &#62;
-                    </span>
-                </div>
-            </div>
-
-            <!-- Menu lever 2 -->
-            <div class="menu-lever-2">
-                <div class="menu-list flex__start__center">
-                    <a href="#" class="menu2-items active flex__center__center">すべて</a>
-                    <a href="#" class="menu2-items flex__center__center">
-                        <span class="sp">新着</span>
-                        <span class="pc">1週間以内の説明会</span>
-                    </a>
-                    <a href="#" class="menu2-items flex__center__center">
-                        <span class="sp">ピックアップ</span>
-                        <span class="pc">3週間以内の説明会</span>
-                    </a>
-                </div>
-            </div>
-            <!-- List Items -->
-            <div class="group-list-items flex__between__center flex__wrap">
-                <div class="wrap-item">
-                    <div class="item my-container">
-                        <div class="bookmark">
-                            <button ></button>
-                            <img src="assets/images/bookmark.png" >
-                        </div>
-                        <div class="img-item">
-                            <div class="left-img">
-                                <img src="assets/images/items-image-06.png" >
-                                <div class="btnx2">
-                                    <!-- <div class="btn-left"> -->
-                                    <button class="btn btn-left"
-                                        id="btn_open_modal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
-                                    </button>
-                                    <button class="btn btn-right" id="btn-open-modal-search">説明会予約</button>
-                                    <!-- </div> -->
-                                    <!-- <div class="btn-right"></div> -->
-                                </div>
-                            </div>
-                            <div class="right-img">
-                                <p class="title">中小企業のロールモデルとなる</p>
-                                <p class="content more-text">文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
-                                    を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
-                                <!-- <div class="extend">
-                                    <p>続きを読む &nbsp;</p>
-                                    <img src="assets/images/extend.png" >
-
-                                </div> -->
-                                <div class="mid-right">
-                                    <img src="assets/images/icon-feed.png" >
-                                    <div class="mig-right-right">
-                                        <p>名大テクノロジー株式会社</p>
-                                        <button>IT・ソフトウェア</button>
-                                    </div>
-                                </div>
-                                <div class="address">
-                                    <img src="assets/images/address.png" >
-                                    <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
-                                </div>
-                                <div class="tag">
-                                    <img src="assets/images/has-tag.png" >
-                                    <div class="tag-right">
-                                        <button>#転職なし</button>
-                                        <button>##ベンチャー企業</button>
-                                        <button>#20代が活躍</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-item">
-                    <div class="item my-container">
-                        <div class="bookmark">
-                            <button ></button>
-                            <img src="assets/images/bookmark.png" >
-                        </div>
-                        <div class="img-item">
-                            <div class="left-img">
-                                <img src="assets/images/guidance_list/item2.png" >
-                                <div class="btnx2">
-                                    <!-- <div class="btn-left"> -->
-                                    <button class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
-                                    </button>
-                                    <button class="btn btn-right">説明会予約</button>
-                                    <!-- </div> -->
-                                    <!-- <div class="btn-right"></div> -->
-                                </div>
-                            </div>
-                            <div class="right-img">
-                                <p class="title">中小企業のロールモデルとなる</p>
-                                <p class="content more-text">文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
-                                    を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
-                                
-                                <div class="mid-right">
-                                    <img src="assets/images/icon-feed.png" >
-                                    <div class="mig-right-right">
-                                        <p>名大テクノロジー株式会社</p>
-                                        <button>IT・ソフトウェア</button>
-                                    </div>
-                                </div>
-                                <div class="address">
-                                    <img src="assets/images/address.png" >
-                                    <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
-                                </div>
-                                <div class="tag">
-                                    <img src="assets/images/has-tag.png" >
-                                    <div class="tag-right">
-                                        <button>#転職なし</button>
-                                        <button>##ベンチャー企業</button>
-                                        <button>#20代が活躍</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-item">
-                    <div class="item my-container">
-                        <div class="bookmark">
-                            <button ></button>
-                            <img src="assets/images/bookmark.png" >
-                        </div>
-                        <div class="img-item">
-                            <div class="left-img">
-                                <img src="assets/images/guidance_list/item3.png" >
-                                <div class="btnx2">
-                                    <!-- <div class="btn-left"> -->
-                                    <button class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
-                                    </button>
-                                    <button class="btn btn-right">説明会予約</button>
-                                    <!-- </div> -->
-                                    <!-- <div class="btn-right"></div> -->
-                                </div>
-                            </div>
-                            <div class="right-img">
-                                <p class="title">中小企業のロールモデルとなる</p>
-                                <p class="content more-text">文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
-                                    を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
-                                
-                                <div class="mid-right">
-                                    <img src="assets/images/icon-feed.png" >
-                                    <div class="mig-right-right">
-                                        <p>名大テクノロジー株式会社</p>
-                                        <button>IT・ソフトウェア</button>
-                                    </div>
-                                </div>
-                                <div class="address">
-                                    <img src="assets/images/address.png" >
-                                    <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
-                                </div>
-                                <div class="tag">
-                                    <img src="assets/images/has-tag.png" >
-                                    <div class="tag-right">
-                                        <button>#転職なし</button>
-                                        <button>##ベンチャー企業</button>
-                                        <button>#20代が活躍</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-item">
-                    <div class="item my-container">
-                        <div class="bookmark">
-                            <button ></button>
-                            <img src="assets/images/bookmark.png" >
-                        </div>
-                        <div class="img-item">
-                            <div class="left-img">
-                                <img src="assets/images/guidance_list/item4.png" >
-                                <div class="btnx2">
-                                    <!-- <div class="btn-left"> -->
-                                    <button class="btn btn-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;エントリー
-                                    </button>
-                                    <button class="btn btn-right">説明会予約</button>
-                                    <!-- </div> -->
-                                    <!-- <div class="btn-right"></div> -->
-                                </div>
-                            </div>
-                            <div class="right-img">
-                                <p class="title">中小企業のロールモデルとなる</p>
-                                <p class="content more-text">文系の方でエンジニアにチャレンジした方、応募受中です。私達は、それぞれの夢や目標の実現を目指す一人ひとりに寄り添い、あらゆるチャンス
-                                    を提供していきます。エンジニアのダミーダミーダミーダミーダミー</p>
-                                
-                                <div class="mid-right">
-                                    <img src="assets/images/icon-feed.png" >
-                                    <div class="mig-right-right">
-                                        <p>名大テクノロジー株式会社</p>
-                                        <button>IT・ソフトウェア</button>
-                                    </div>
-                                </div>
-                                <div class="address">
-                                    <img src="assets/images/address.png" >
-                                    <p>東京都港区赤坂7-10-8赤坂江戸清ビル4F</p>
-                                </div>
-                                <div class="tag">
-                                    <img src="assets/images/has-tag.png" >
-                                    <div class="tag-right">
-                                        <button>#転職なし</button>
-                                        <button>##ベンチャー企業</button>
-                                        <button>#20代が活躍</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Result and Pagination -->
-                <div class="result-pagination flex__between__center">
-                    <div class="result flex__start__center">
-                        <img src="assets/images/result.png" >
-                        <div class="number-result flex__center__end">
-                            380
-                            <span>社</span>
-                        </div>
-                        <div class="result-text">380件中 31件～60件を表示</div>
-                    </div>
-                    <div class="pagination flex__end__center">
-                        <span class="pagi-items pagi-prev">
-                            &#60;
-                        </span>
-                        <span class="pagi-items">1</span>
-                        <span class="pagi-items">2</span>
-                        <span class="pagi-items">3</span>
-                        <span class="pagi-items active">4</span>
-                        <span class="pagi-items">5</span>
-                        <span class="pagi-items">6</span>
-                        <span class="pagi-items">7</span>
-                        <span class="pagi-items">8</span>
-                        <span class="pagi-items">9</span>
-                        <span class="pagi-items">10</span>
-                        <span class="more">...</span>
-                        <span class="pagi-items text">最後</span>
-                        <span class="pagi-items pagi-next">
                             &#62;
                         </span>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------Modal -------------------------------------------------------------->
+        <div class="page_modal" id="my_page_modal">
+            <div class="my-container-child">
+                <!-- page_modal_header -->
+                <div class="page_modal_header">
+                    <button class="modal_back_btn">
+                    </button>
+                    <p class="modal_title">業種を選択してください</p>
+                    <button id="my_modal_close_btn" class="modal_close_btn">
+                    </button>
+                </div>
+                <!-- page_modal_container -->
+                <div class="page_modal_container">
+                    <!-- search_checkbox_results -->
+                    <div class="search_checkbox_results">
+                        <div class="search_checkbox_result_item">
+                            <div class="search_checkbox_result_item_content">WEB</div>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">WEB</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item">
+                            <p class="search_checkbox_result_item_content">ABCD</p>
+                            <button class="search_checkbox_result_item_delete_btn"
+                                    id="my_search_checkbox_result_item_delete_btn"></button>
+                        </div>
+                        <div class="search_checkbox_result_item search_checkbox_result_item_conrfirm_btn"
+                             id="my_search_checkbox_result_item_confirm_btn">
+                            条件をクリアする
+                        </div>
+                    </div>
+                    <!-- modal_content -->
+                    <div class="modal_content">
+                        <!-- options_list -->
+                        <div class="options_list">
+                            <button class="option_item_btn option_item_btn_selected"
+                                    id='my_option_item_btn'>サービス・インフラ
+                            </button>
+                            <button class="option_item_btn" id='my_option_item_btn'>ABCD</button>
+                            <button class="option_item_btn" id='my_option_item_btn'>EFGH</button>
+                        </div>
+                        <!-- option_item_values -->
+                        <div class="option_item_values">
+                            <div class="option_item_value_item">
+                                <label class="option_item_value_label checkbox-default-area">
+                                    <input type="checkbox" checked
+                                           class="checkbox_input_field checkbox-default-input "
+                                           id="checkbox_input_field_1_all">
+                                    <span class="option_item_value_label_text">サービス・百貨店・流通・小売すべて </span>
+                                </label>
+                            </div>
+                            <ol>
+                                <li>
+                                    <div class="option_item_value_item">
+                                        <label class="option_item_value_label checkbox-default-area">
+                                            <input type="checkbox"
+                                                   class="checkbox_input_field checkbox-default-input checkbox1"
+                                                   id="checkbox_input_field_1_1">
+                                            <span class="option_item_value_label_text">dsads</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="option_item_value_item">
+                                        <label class="option_item_value_label checkbox-default-area">
+                                            <input type="checkbox"
+                                                   class="checkbox_input_field checkbox-default-input checkbox1"
+                                                   id="checkbox_input_field_1_1">
+                                            <span class="option_item_value_label_text">dsadsdasd</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- modal_footer -->
+                    <div class="modal_footer">
+                        <!-- number-result -->
+                        <div class="result flex__start__center">
+                            <img src="assets/images/result.png">
+                            <div class="number-result flex__center__end">
+                                380
+                                <span>社</span>
+                            </div>
+                        </div>
+                        <div class="modal_footer_btns">
+                            <button class="footer_btn footer_btn_delete">クリアする</button>
+                            <button class="footer_btn footer_btn_select">選択する</button>
+                            <button class="footer_btn footer_btn_add_cond">+ さらに条件を追加</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- ----------------------------------Modal -------------------------------------------------------------->
-            <div class="page_modal" id="my_page_modal">
-                <div class="my-container-child">
-                    <!-- page_modal_header -->
-                    <div class="page_modal_header">
-                        <button class="modal_back_btn" >
-                        </button>
-                        <p class="modal_title">業種を選択してください</p>
-                        <button  id="my_modal_close_btn" class="modal_close_btn">
-                        </button>
-                    </div>
-                    <!-- page_modal_container -->
-                    <div class="page_modal_container">
-                        <!-- search_checkbox_results -->
-                        <div class="search_checkbox_results">
-                            <div class="search_checkbox_result_item">
-                                <div class="search_checkbox_result_item_content">WEB</div>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">WEB</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item">
-                                <p class="search_checkbox_result_item_content">ABCD</p>
-                                <button class="search_checkbox_result_item_delete_btn"
-                                    id="my_search_checkbox_result_item_delete_btn"></button>
-                            </div>
-                            <div class="search_checkbox_result_item search_checkbox_result_item_conrfirm_btn"
-                                id="my_search_checkbox_result_item_confirm_btn">
-                                条件をクリアする
+        </div>
+        <!----------------------------------------------------Modal Search -------------------------------------------------------------->
+        <div class="page_modal" id="my-page-modal-search">
+            <div class="my-container-child">
+                <!-- page_modal_header -->
+                <div class="page_modal_header">
+                    <button class="modal_back_btn">
+                    </button>
+                    <p class="modal_title" style="font-size: 27px;">開催日を選択してください</p>
+                    <button class="modal_close_btn" id="my_modal_close_btn_search">
+                    </button>
+                </div>
+                <!-- page_modal_container -->
+                <div class="page-search-term-date">
+                    <div class="calendar" id="calendar-app">
+                        <div class="calendar--day-view" id="day-view">
+                            <span class="day-view-exit" id="day-view-exit">&times;</span>
+                            <span class="day-view-date" id="day-view-date"></span>
+                            <div class="day-view-content">
+                                <div class="day-add-event" id="add-day-event-box" data-active="false">
+                                    <div class="row">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- modal_content -->
-                        <div class="modal_content">
-                            <!-- options_list -->
-                            <div class="options_list">
-                                <button class="option_item_btn option_item_btn_selected"
-                                    id='my_option_item_btn'>サービス・インフラ</button>
-                                <button class="option_item_btn" id='my_option_item_btn'>ABCD</button>
-                                <button class="option_item_btn" id='my_option_item_btn'>EFGH</button>
-                            </div>
-                            <!-- option_item_values -->
-                            <div class="option_item_values">
-                                <div class="option_item_value_item">
-                                    <label class="option_item_value_label checkbox-default-area">
-                                        <input type="checkbox" checked
-                                            class="checkbox_input_field checkbox-default-input "
-                                            id="checkbox_input_field_1_all">
-                                        <span class="option_item_value_label_text">サービス・百貨店・流通・小売すべて </span>
-                                    </label>
+                        <div class="calendar--view" id="calendar-view">
+                            <div class="cview__month">
+                                <span id="calendar-month">May</span>
+                                <div class="calendar-month-right">
+                                    <div class="student-request__elm-independent-item">
+                                        <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                               for="student_request_workplace_feature_05">
+                                            <input type="checkbox"
+                                                   class="student-request__elm-checkbox checkbox-default-input" name=""
+                                                   id="student_request_workplace_feature_05">
+                                            <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">平日を選択</span>
+                                        </label>
+                                    </div>
+                                    <div class="student-request__elm-independent-item">
+                                        <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                               for="student_request_workplace_feature_06">
+                                            <input type="checkbox"
+                                                   class="student-request__elm-checkbox checkbox-default-input" name=""
+                                                   id="student_request_workplace_feature_06">
+                                            <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">土日祝を選択</span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <ol>
-                                    <li>
-                                        <div class="option_item_value_item">
-                                            <label class="option_item_value_label checkbox-default-area">
-                                                <input type="checkbox"
-                                                    class="checkbox_input_field checkbox-default-input checkbox1"
-                                                    id="checkbox_input_field_1_1">
-                                                <span class="option_item_value_label_text">dsads</span>
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="option_item_value_item">
-                                            <label class="option_item_value_label checkbox-default-area">
-                                                <input type="checkbox"
-                                                    class="checkbox_input_field checkbox-default-input checkbox1"
-                                                    id="checkbox_input_field_1_1">
-                                                <span class="option_item_value_label_text">dsadsdasd</span>
-                                            </label>
-                                        </div>
-                                    </li>
-                                </ol>
+                            </div>
+                            <div class="cview__header"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                月
+                            </div>
+                            <div class="cview__header"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                火
+                            </div>
+                            <div class="cview__header"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                水
+                            </div>
+                            <div class="cview__header"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                木
+                            </div>
+                            <div class="cview__header"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                金
+                            </div>
+                            <div class="cview__header cview__header-blue"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                土
+                            </div>
+                            <div class="cview__header cview__header-red"
+                                 style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                                日
+                            </div>
+                            <div class="calendar--view" id="dates">
+                            </div>
+                            <div class="cview__month next-calendar">
+                                <button class="btn-show-all-2 flex__center__center" id="calendar-month-last">
+                                    <img class="arrow-right" src="assets/images/arrow-left.png">
+                                    前の月
+                                </button>
+                                <button class="btn-show-all-2 flex__center__center cview__month-next"
+                                        id="calendar-month-next">
+                                    次の月
+                                    <img class="arrow-right" src="assets/images/top-screen/arrow-right-black.png"
+                                    >
+                                </button>
                             </div>
                         </div>
                         <!-- modal_footer -->
                         <div class="modal_footer">
                             <!-- number-result -->
                             <div class="result flex__start__center">
-                                <img src="assets/images/result.png" >
-                                <div class="number-result flex__center__end">
-                                    380
-                                    <span>社</span>
-                                </div>
-                            </div>
-                            <div class="modal_footer_btns">
-                                <button class="footer_btn footer_btn_delete">クリアする</button>
-                                <button class="footer_btn footer_btn_select">選択する</button>
-                                <button class="footer_btn footer_btn_add_cond">+ さらに条件を追加</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!----------------------------------------------------Modal Search -------------------------------------------------------------->
-            <div class="page_modal" id="my-page-modal-search">
-                <div class="my-container-child">
-                    <!-- page_modal_header -->
-                    <div class="page_modal_header">
-                        <button class="modal_back_btn" >
-                        </button>
-                        <p class="modal_title" style="font-size: 27px;">開催日を選択してください</p>
-                        <button class="modal_close_btn" id="my_modal_close_btn_search">
-                        </button>
-                    </div>
-                    <!-- page_modal_container -->
-                    <div class="page-search-term-date">
-                        <div class="calendar" id="calendar-app">
-                            <div class="calendar--day-view" id="day-view">
-                                <span class="day-view-exit" id="day-view-exit">&times;</span>
-                                <span class="day-view-date" id="day-view-date"></span>
-                                <div class="day-view-content">
-                                    <div class="day-add-event" id="add-day-event-box" data-active="false">
-                                        <div class="row">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calendar--view" id="calendar-view">
-                                <div class="cview__month">
-                                    <span id="calendar-month">May</span>
-                                    <div class="calendar-month-right">
-                                        <div class="student-request__elm-independent-item">
-                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
-                                                for="student_request_workplace_feature_05">
-                                                <input type="checkbox"
-                                                    class="student-request__elm-checkbox checkbox-default-input" name=""
-                                                    id="student_request_workplace_feature_05">
-                                                <span
-                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">平日を選択</span>
-                                            </label>
-                                        </div>
-                                        <div class="student-request__elm-independent-item">
-                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
-                                                for="student_request_workplace_feature_06">
-                                                <input type="checkbox"
-                                                    class="student-request__elm-checkbox checkbox-default-input" name=""
-                                                    id="student_request_workplace_feature_06">
-                                                <span
-                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">土日祝を選択</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cview__header"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    月
-                                </div>
-                                <div class="cview__header"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    火
-                                </div>
-                                <div class="cview__header"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    水
-                                </div>
-                                <div class="cview__header"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    木
-                                </div>
-                                <div class="cview__header"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    金
-                                </div>
-                                <div class="cview__header cview__header-blue"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    土
-                                </div>
-                                <div class="cview__header cview__header-red"
-                                    style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
-                                    日
-                                </div>
-                                <div class="calendar--view" id="dates">
-                                </div>
-                                <div class="cview__month next-calendar">
-                                    <button class="btn-show-all-2 flex__center__center" id="calendar-month-last">
-                                        <img class="arrow-right" src="assets/images/arrow-left.png" >
-                                        前の月
-                                    </button>
-                                    <button class="btn-show-all-2 flex__center__center cview__month-next"
-                                        id="calendar-month-next">
-                                        次の月
-                                        <img class="arrow-right" src="assets/images/top-screen/arrow-right-black.png"
-                                            >
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- modal_footer -->
-                         <div class="modal_footer">
-                            <!-- number-result -->
-                            <div class="result flex__start__center">
-                                <img src="assets/images/result.png" >
+                                <img src="assets/images/result.png">
                                 <div class="number-result flex__center__end">
                                     380
                                     <span>社</span>
@@ -611,12 +668,12 @@
                                 <button class="footer_btn footer_btn_select">選択する</button>
                             </div>
                         </div>
-                        </div>
-                         
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
 </body>
 </html>
 <script>
@@ -645,8 +702,7 @@
         ];
 
         this.aptDates = [new Date(2016, 4, 30).toString(), new Date(2016, 4, 1).toString()];
-        this.eles = {
-        };
+        this.eles = {};
         this.calDaySelected = null;
 
         this.calendar = document.getElementById("calendar-app");
@@ -768,8 +824,6 @@
         this.calendarMonthNextDiv.setAttribute("data-date", nextM);
 
     }
-
-
     CalendarApp.prototype.showEventsCreateElesView = function (events) {
         var ul = document.createElement("ul");
         ul.className = 'day-event-list-ul';
@@ -782,8 +836,14 @@
             var li = document.createElement("li");
             li.className = "event-dates";
             // li.innerHtml
-            var html = "<span class='start-time'>" + _start.toLocaleTimeString(navigator.language, { hour: '2-digit', minute: '2-digit' }) + "</span> <small>through</small> ";
-            html += "<span class='end-time'>" + _end.toLocaleTimeString(navigator.language, { hour: '2-digit', minute: '2-digit' }) + ((_end.getDate() != _start.getDate()) ? ' <small>on ' + _end.toLocaleDateString() + "</small>" : '') + "</span>";
+            var html = "<span class='start-time'>" + _start.toLocaleTimeString(navigator.language, {
+                hour: '2-digit',
+                minute: '2-digit'
+            }) + "</span> <small>through</small> ";
+            html += "<span class='end-time'>" + _end.toLocaleTimeString(navigator.language, {
+                hour: '2-digit',
+                minute: '2-digit'
+            }) + ((_end.getDate() != _start.getDate()) ? ' <small>on ' + _end.toLocaleDateString() + "</small>" : '') + "</span>";
 
 
             html += "<span class='event-name'>" + event.name + "</span>";
@@ -822,7 +882,8 @@
                 }
             }
         }
-        this.openDayWindow(deletedDate);;
+        this.openDayWindow(deletedDate);
+        ;
     };
     CalendarApp.prototype.sortEventsByTime = function (events) {
         if (!events) return [];
@@ -880,7 +941,6 @@
             this.addEvent();
         }
     };
-
     CalendarApp.prototype.addEvent = function () {
 
         var name = this.dayEventAddForm.nameEvent.value.trim();
@@ -1000,17 +1060,13 @@
             /* Probably could be coded better -- a block to clean up trailing data */
             if (options.indexOf(_splitTime[0]) === -1) {
                 return options[0];
-            }
-            else if (_splitTime[1] == "0") {
+            } else if (_splitTime[1] == "0") {
                 return input;
-            }
-            else if (_splitTime[1] == "00") {
+            } else if (_splitTime[1] == "00") {
                 return _splitTime[0] + ":00";
-            }
-            else if (_trailingTime < 10) {
+            } else if (_trailingTime < 10) {
                 return _splitTime[0] + ":" + "0" + _trailingTime;
-            }
-            else if (!Number.isInteger(_trailingTime) || _trailingTime < 0 || _trailingTime > 59) {
+            } else if (!Number.isInteger(_trailingTime) || _trailingTime < 0 || _trailingTime > 59) {
                 return _splitTime[0];
             }
             return _splitTime[0] + ":" + _trailingTime;
@@ -1059,7 +1115,6 @@
         this.closeDayWindow();
         return true;
     };
-
     $(document).ready(function () {
         $('.cview--date').click(function () {
             $(this).toggleClass('cview--date-focus');
