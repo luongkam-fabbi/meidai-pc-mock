@@ -83,6 +83,11 @@
       margin-top: 3%;
       background-color: #fff;
       padding: 33px; }
+      @media only screen and (max-width: 1050px) {
+        .page-entry-pc .wrap-item .item .img-item .right-img .title {
+          font-size: 25px !important; }
+        .page-entry-pc .wrap-item .item .img-item .right-img .content {
+          font-size: 12px !important; } }
       .page-entry-pc .wrap-item .item .img-item .right-img .title {
         font-size: 30px;
         font-family: 'YuGo-Bold';
@@ -114,18 +119,29 @@
           border: 1px solid #DCDCDC;
           padding: 18px;
           margin-right: 20px; }
-        .page-entry-pc .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
-          font-size: 30px;
-          font-family: 'YuGo-Bold';
-          letter-spacing: 1.2px;
-          font-weight: bold; }
-        .page-entry-pc .wrap-item .item .img-item .right-img .mid-right .mig-right-right button {
-          font-size: 12px;
-          font-family: 'YuGo-Medium';
-          letter-spacing: 0.6px;
-          border: 1px solid #DCDCDC;
-          padding: 4px 15px;
-          border-radius: 5px; }
+        @media only screen and (max-width: 1150px) {
+          .page-entry-pc .wrap-item .item .img-item .right-img .mid-right img {
+            width: 73px;
+            height: 73px;
+            padding: 12px; } }
+        .page-entry-pc .wrap-item .item .img-item .right-img .mid-right .mig-right-right {
+          margin-top: -8px; }
+          .page-entry-pc .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
+            font-size: 30px;
+            font-family: 'YuGo-Bold';
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            margin-bottom: 19px; }
+          @media only screen and (max-width: 1150px) {
+            .page-entry-pc .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
+              font-size: 20px !important; } }
+          .page-entry-pc .wrap-item .item .img-item .right-img .mid-right .mig-right-right button {
+            font-size: 12px;
+            font-family: 'YuGo-Medium';
+            letter-spacing: 0.6px;
+            border: 1px solid #DCDCDC;
+            padding: 4px 15px;
+            border-radius: 5px; }
       .page-entry-pc .wrap-item .item .img-item .right-img .address {
         display: flex;
         margin-top: 22px; }
@@ -155,6 +171,9 @@
             margin-right: 10px;
             padding: 3px 20px;
             white-space: nowrap; }
+          @media only screen and (max-width: 1000px) {
+            .page-entry-pc .wrap-item .item .img-item .right-img .tag .tag-right button {
+              font-size: 12px !important; } }
   .page-entry-pc .wrap-item .total {
     border: 1px solid red;
     height: 100px; }

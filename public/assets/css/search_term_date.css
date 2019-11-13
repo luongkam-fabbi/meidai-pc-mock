@@ -44,8 +44,7 @@
     background: #e7e8e8;
     color: #222;
     font-size: 14px;
-    font-weight: 600;
-    font-family: "Avenir", sans-serif; }
+    font-weight: 600; }
   .page-search-term-date .row {
     width: 100%;
     display: flex;
@@ -75,7 +74,6 @@
   .page-search-term-date .add-event-label {
     padding: 10px 0;
     font-size: 18px;
-    font-family: 'Avenir', sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 12px;
@@ -157,7 +155,6 @@
     left: 22px;
     font-size: 22px;
     color: #252525;
-    font-family: 'Avenir', sans-serif;
     font-weight: 800;
     cursor: pointer;
     opacity: 0;
@@ -169,7 +166,6 @@
     right: 22px;
     text-align: right;
     font-size: 22px;
-    font-family: 'Avenir', sans-serif;
     font-weight: 800;
     color: #393939;
     border-bottom: 2px solid #222;
@@ -189,7 +185,6 @@
     letter-spacing: -1px;
     color: #ddd;
     line-height: 1.1em;
-    font-family: 'Avenir', sans-serif;
     z-index: -1; }
   .page-search-term-date .day-event-list-ul {
     list-style: none;
@@ -206,7 +201,6 @@
       position: relative; }
   .page-search-term-date .event-dates {
     font-weight: 800;
-    font-family: 'Avenir', sans-serif;
     color: #04b6e2;
     font-size: 18px;
     text-transform: lowercase;
@@ -223,7 +217,6 @@
     cursor: pointer; }
   .page-search-term-date .event-name {
     font-size: 19px;
-    font-family: 'Avenir', sans-serif;
     color: #222;
     padding: 10px;
     background: #f7f7f7;
@@ -257,7 +250,6 @@
     width: 100%;
     text-align: center;
     font-size: 22px;
-    font-family: 'Avenir', sans-serif;
     padding-bottom: 20px;
     color: #222;
     text-transform: uppercase;
@@ -294,8 +286,7 @@
     overflow: hidden;
     text-overflow: clip;
     font-size: 24px;
-    font-weight: 900;
-    font-family: 'YuGo-Medium'; }
+    font-weight: 900; }
   .page-search-term-date .cview__header-blue, .page-search-term-date .cview--date:nth-child(7n + 6) {
     color: #083AC9; }
   .page-search-term-date .cview__header-red, .page-search-term-date .cview--date:nth-child(7n + 7) {
@@ -310,7 +301,6 @@
     overflow: hidden;
     text-overflow: clip;
     font-size: 24px;
-    font-family: 'YuGo-Medium';
     font-weight: 900;
     cursor: pointer; }
   .page-search-term-date .cview--date:hover {
@@ -338,7 +328,6 @@
     background: #fff;
     letter-spacing: 0.44px;
     font-size: 22px;
-    font-family: 'YuGo-Medium';
     color: #3B3B3B;
     border: 1px solid #C9CDD1;
     border-radius: 3px; }

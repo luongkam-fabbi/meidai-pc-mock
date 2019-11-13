@@ -10,6 +10,12 @@
 p {
   font-size: 12px; }
 
+.morecontent span {
+  display: none; }
+
+.morelink {
+  display: block; }
+
 #up-to-top {
   cursor: pointer;
   position: fixed;
@@ -46,3 +52,40 @@ p {
   max-width: 1024px;
   background: #fff;
   margin: 0 auto; }
+
+@media only screen and (max-width: 1300px) {
+  .btnx2 .btn {
+    font-size: 12px !important; }
+  .btnx2 .btn-left {
+    padding-top: 6px !important;
+    background-position: 30px !important;
+    background-size: 30px !important; }
+    .btnx2 .btn-left:hover {
+      background-size: 30px !important;
+      background: url("../images/btn-icon-1.png") no-repeat 30px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
+      background: url("../images/btn-icon-1.png") no-repeat 30px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
+
+@media only screen and (max-width: 1150px) {
+  .btnx2 .btn {
+    font-size: 10px !important; }
+  .btnx2 .btn-right {
+    background-size: 40px !important; }
+    .btnx2 .btn-right:hover {
+      background-size: 40px !important;
+      background: url("../images/book.png") no-repeat 40px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
+      background: url("../images/book.png") no-repeat 40px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
+
+@media only screen and (max-width: 1000px) {
+  .btnx2 .btn-left {
+    background-position: 20px !important;
+    background-size: 20px !important; }
+    .btnx2 .btn-left:hover {
+      background-size: 20px !important;
+      background: url("../images/btn-icon-1.png") no-repeat 10px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
+      background: url("../images/btn-icon-1.png") no-repeat 10px, linear-gradient(to right, #125691, #1F7B9C) !important; }
+  .btnx2 .btn-right {
+    background-size: 25px !important; }
+    .btnx2 .btn-right:hover {
+      background-size: 25px !important;
+      background: url("../images/book.png") no-repeat 25px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
+      background: url("../images/book.png") no-repeat 25px, linear-gradient(to right, #125691, #1F7B9C) !important; } }

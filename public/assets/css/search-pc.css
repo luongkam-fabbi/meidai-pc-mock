@@ -14,7 +14,6 @@
       background-color: #e7eaeb;
       border-radius: 5px;
       font-size: 20px;
-      font-family: 'YuGo-Bold';
       letter-spacing: 0.44px;
       color: #191919; }
     .page-search-pc .menu .list-menu button:focus {
@@ -64,8 +63,7 @@
         background: linear-gradient(to left, #1e7b9c, #166394);
         font-size: 24px;
         color: #fff;
-        border-radius: 5px;
-        font-family: 'YuGo-Bold'; }
+        border-radius: 5px; }
         .page-search-pc .search .top-search .spe-search .btn-search input {
           background-color: #fff;
           border-radius: 5px; }
@@ -87,7 +85,6 @@
         .page-search-pc .search .top-search .keyword .list-keyword button {
           padding: 8px 20px;
           font-size: 16px;
-          font-family: 'YuGo-Medium';
           letter-spacing: 0.32px;
           background-color: #fff;
           border-radius: 10px;
@@ -106,7 +103,6 @@
         background-color: #eceef0;
         font-size: 24px;
         font-weight: bold;
-        font-family: 'YuGo-Bold';
         letter-spacing: 0.64px;
         display: flex;
         align-items: center;
@@ -127,7 +123,6 @@
           padding-left: 4%; }
           .page-search-pc .search .body-search .conditon-search .right-conditon .left-folder p {
             font-size: 22px;
-            font-family: 'YuGo-Medium';
             letter-spacing: 0.66px; }
           .page-search-pc .search .body-search .conditon-search .right-conditon .left-folder img {
             width: 40px;
@@ -141,12 +136,10 @@
             background-color: #fff;
             color: #B5B5B5;
             font-size: 18px;
-            font-family: 'YuGo-Medium';
             padding: 12px 20px;
             border-radius: 5px; }
           .page-search-pc .search .body-search .conditon-search .right-conditon .right-folder p {
-            font-size: 18px;
-            font-family: 'YuGo-Medium'; }
+            font-size: 18px; }
   .page-search-pc .search .button-search {
     width: 60%;
     margin: 60px auto 100px;
@@ -159,7 +152,6 @@
       font-size: 24px;
       color: #5C5C5C;
       border-radius: 5px;
-      font-family: 'YuGo-Bold';
       border: 1px solid #CECECE; }
     .page-search-pc .search .button-search .btn-search {
       flex: 3;
@@ -168,8 +160,7 @@
       background: linear-gradient(to left, #1e7b9c, #166394);
       font-size: 24px;
       color: #fff;
-      border-radius: 5px;
-      font-family: 'YuGo-Bold'; }
+      border-radius: 5px; }
       .page-search-pc .search .button-search .btn-search img {
         height: 30px;
         width: 33px;
@@ -215,7 +206,6 @@
         outline: none;
         background: transparent; }
       .page-search-pc .section-slide .slick-dots-slide li button:before {
-        font-family: 'slick';
         font-size: 30px;
         line-height: 20px;
         position: absolute;
@@ -281,7 +271,6 @@
       text-decoration: underline; }
     .page-search-pc .end .link-page a {
       font-size: 20px;
-      font-family: 'YuGo-Medium';
       color: #222222; }
 
 .page-search-pc .tab-set .tab-panel {

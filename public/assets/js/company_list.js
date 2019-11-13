@@ -29,7 +29,6 @@ $(document).ready(function () {
       togleModal(false);
     }
   });
-
   $('.checkbox1').click(function(){
     const checkBoxCheckAll = $('#checkbox_input_field_1_all');
     const checkBoxChecked = $('.checkbox1:checked');
@@ -87,7 +86,11 @@ $(document).ready(function () {
   $('#my_modal_close_btn_search').click(function(){
     togleModal(false);
   });
-
+  $('.page_modal').click(function(e){
+    if ( e.target === this ){
+      togleModal(false);
+    }
+  });
   $('.checkbox1').click(function(){
     const checkBoxCheckAll = $('#checkbox_input_field_1_all');
     const checkBoxChecked = $('.checkbox1:checked');

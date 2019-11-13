@@ -186,6 +186,10 @@
             .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_text .user_chat_image {
               max-width: 80px;
               max-height: 80px; }
+            .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_text .user_pdf_file {
+              text-decoration: underline; }
+              .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item .chat_item_text .user_pdf_file:hover {
+                color: #cd0606; }
         .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item.guess_mess {
           align-self: flex-start; }
           .page-message-list .main .message_list_conainer .scroll_message .show_new_message .chat_content .chat_item.guess_mess .chat_item_text {

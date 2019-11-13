@@ -4,10 +4,11 @@
   width: 100%;
   background-size: cover; }
 
-.page-feature-detail-pc .title-img {
+.page-feature-detail-pc .text-feature .title-img {
   position: relative;
-  left: 40px;
-  top: -40px;
+  z-index: 1;
+  margin-top: -45px;
+  margin-bottom: 41px;
   width: 657px;
   height: 87px;
   background: linear-gradient(to left, #1e7b9c, #166394);
@@ -15,21 +16,19 @@
   font-weight: bold;
   align-items: center;
   display: flex; }
-  .page-feature-detail-pc .title-img p {
+  .page-feature-detail-pc .text-feature .title-img p {
     font-size: 40px;
     text-align: center;
     width: 100%; }
 
 .page-feature-detail-pc .text-feature .title-feature {
   font-size: 32px;
-  font-family: 'YuGo-Bold';
   font-weight: bold;
   margin-bottom: 25px; }
 
 .page-feature-detail-pc .text-feature .content-feature {
   font-size: 22px;
-  font-family: 'YuGo-Medium';
-  margin-bottom: 75px; }
+  margin-bottom: 30px; }
 
 .page-feature-detail-pc .group-list-items .wrap-item {
   background-color: #E7EAEB;
@@ -69,8 +68,7 @@
           height: 76px;
           border: 1px solid;
           width: 50%;
-          font-size: 20px;
-          font-family: 'YuGo-Bold'; }
+          font-size: 20px; }
         .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .left-img .btnx2 .btn-left {
           background-color: #fff;
           background-image: url("../images/btn-icon-1.png");
@@ -116,21 +114,23 @@
       margin-top: 3%;
       background-color: #fff;
       padding: 33px; }
+      @media only screen and (max-width: 1050px) {
+        .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .title {
+          font-size: 25px !important; }
+        .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .content {
+          font-size: 12px !important; } }
       .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .title {
         font-size: 30px;
-        font-family: 'YuGo-Bold';
         letter-spacing: 1.2px;
         font-weight: bold;
         margin-bottom: 10px; }
       .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .content {
-        font-size: 18px;
-        font-family: 'Kozuka Gothic Pr6N'; }
+        font-size: 18px; }
       .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .extend {
         margin-top: 15px;
         display: flex;
         float: right; }
         .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .extend p {
-          font-family: 'Kozuka Gothic Pr6N';
           color: #19a4b9;
           font-size: 14px; }
         .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .extend img {
@@ -147,30 +147,41 @@
           border: 1px solid #DCDCDC;
           padding: 18px;
           margin-right: 20px; }
-        .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
-          font-size: 30px;
-          font-family: 'YuGo-Bold';
-          letter-spacing: 1.2px;
-          font-weight: bold; }
-        .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right button {
-          font-size: 12px;
-          font-family: 'YuGo-Medium';
-          letter-spacing: 0.6px;
-          border: 1px solid #DCDCDC;
-          padding: 4px 15px;
-          border-radius: 5px; }
+        @media only screen and (max-width: 1150px) {
+          .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right img {
+            width: 73px;
+            height: 73px;
+            padding: 12px; } }
+        .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right {
+          margin-top: -8px; }
+          .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
+            font-size: 30px;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            margin-bottom: 19px; }
+          @media only screen and (max-width: 1150px) {
+            .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
+              font-size: 20px !important; } }
+          .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right button {
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            border: 1px solid #DCDCDC;
+            padding: 4px 15px;
+            border-radius: 5px; }
       .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .address {
         display: flex;
         margin-top: 22px;
         display: flex;
-        align-items: center; }
+        align-items: flex-start; }
         .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .address img {
           width: 20px;
           background-size: contain;
           margin-right: 20px; }
+        @media only screen and (max-width: 1050px) {
+          .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .address p {
+            font-size: 12px !important; } }
         .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .address p {
           font-size: 18px;
-          font-family: 'YuGo-Medium';
           letter-spacing: 0.24px; }
       .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .tag {
         display: flex;
@@ -190,6 +201,9 @@
             margin-right: 10px;
             padding: 3px 20px;
             white-space: nowrap; }
+          @media only screen and (max-width: 1000px) {
+            .page-feature-detail-pc .group-list-items .wrap-item .item .img-item .right-img .tag .tag-right button {
+              font-size: 12px !important; } }
   .page-feature-detail-pc .group-list-items .wrap-item .total {
     border: 1px solid red;
     height: 100px; }
@@ -246,27 +260,25 @@
   .page-feature-detail-pc .page-guidance-list .group-list-items .item .img-item .right-img .tag .tag-right button {
     font-size: 12px; } }
 
-.page-feature-detail-pc .extend {
+.page-feature-detail-pc .extend-other {
   background: #fff;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 200px; }
-  .page-feature-detail-pc .extend .dot {
+  .page-feature-detail-pc .extend-other .dot {
     margin: 0 auto 50px;
     font-size: 35px;
     background-color: #000;
     width: 10px;
     height: 10px;
     border-radius: 5px; }
-  .page-feature-detail-pc .extend .text-jp {
-    font-family: 'YuGo-Bold';
+  .page-feature-detail-pc .extend-other .text-jp {
     font-size: 48px;
     color: #191919; }
-  .page-feature-detail-pc .extend .text-en {
-    font-family: 'DINMittelschriftStd';
+  .page-feature-detail-pc .extend-other .text-en {
     font-size: 18px;
     color: #BFBFBF; }
-  .page-feature-detail-pc .extend .line {
+  .page-feature-detail-pc .extend-other .line {
     width: 38px;
     height: 1px;
     background-color: #000;
@@ -304,7 +316,6 @@
         outline: none;
         background: transparent; }
       .page-feature-detail-pc .section-slide .slick-dots-slide li button:before {
-        font-family: 'slick';
         font-size: 30px;
         line-height: 20px;
         position: absolute;

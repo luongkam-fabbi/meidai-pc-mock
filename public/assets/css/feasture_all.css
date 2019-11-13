@@ -9,14 +9,12 @@
   .page-feasture-all .section-slide .title-jp {
     margin-top: 45px;
     font-size: 48px;
-    font-family: 'YuGo-Bold';
     font-weight: bold;
     color: #191919;
     text-align: center; }
   .page-feasture-all .section-slide .title-en {
     margin-top: 17px;
     font-size: 18px;
-    font-family: 'DINMittelschriftStd';
     color: #BFBFBF;
     text-align: center; }
   .page-feasture-all .section-slide .line {
@@ -63,7 +61,6 @@
         outline: none;
         background: transparent; }
       .page-feasture-all .section-slide .slick-dots-slide li button:before {
-        font-family: 'slick';
         font-size: 30px;
         line-height: 20px;
         position: absolute;
