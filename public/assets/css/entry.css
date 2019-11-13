@@ -161,19 +161,17 @@
           margin-right: 18px;
           background-size: contain;
           margin-top: 5px; }
-        .page-entry-pc .wrap-item .item .img-item .right-img .tag .tag-right {
-          display: flex;
-          justify-content: space-around; }
+        .page-entry-pc .wrap-item .item .img-item .right-img .tag .tag-right button {
+          border: 1px solid #ccc;
+          font-size: 15px;
+          border-radius: 15px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          padding: 3px 20px;
+          white-space: nowrap; }
+        @media only screen and (max-width: 1000px) {
           .page-entry-pc .wrap-item .item .img-item .right-img .tag .tag-right button {
-            border: 1px solid #ccc;
-            font-size: 15px;
-            border-radius: 15px;
-            margin-right: 10px;
-            padding: 3px 20px;
-            white-space: nowrap; }
-          @media only screen and (max-width: 1000px) {
-            .page-entry-pc .wrap-item .item .img-item .right-img .tag .tag-right button {
-              font-size: 12px !important; } }
+            font-size: 12px !important; } }
   .page-entry-pc .wrap-item .total {
     border: 1px solid red;
     height: 100px; }
