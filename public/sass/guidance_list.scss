@@ -354,7 +354,7 @@
               border: 1px solid;
               width: 50%;
               font-size: 20px;
-              font-family: 'YuGo-Bold';
+              //font-family: 'YuGo-Bold';
             }
 
             .btn-left {
@@ -415,10 +415,17 @@
           margin-top: 3%;
           background-color: #fff;
           padding: 33px;
-
+          @media only screen and ( max-width:1050px){
+            .title {
+              font-size: 25px !important;
+            }
+              .content{
+                font-size: 12px !important;
+              }
+          }
           .title {
             font-size: 30px;
-            font-family: 'YuGo-Bold';
+            //font-family: 'YuGo-Bold';
             letter-spacing: 1.2px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -426,7 +433,7 @@
 
           .content {
             font-size: 18px;
-            font-family: 'Kozuka Gothic Pr6N';
+            //font-family: 'Kozuka Gothic Pr6N';
           }
 
           .extend {
@@ -435,7 +442,7 @@
             float: right;
 
             p {
-              font-family: 'Kozuka Gothic Pr6N';
+              //font-family: 'Kozuka Gothic Pr6N';
               color: #19a4b9;
               font-size: 14px;
             }
@@ -446,7 +453,6 @@
               margin-top: 6px;
             }
           }
-
           .mid-right {
             display: flex;
             margin-top: 41px;
@@ -459,18 +465,32 @@
               padding: 18px;
               margin-right: 20px;
             }
+            @media only screen and (max-width:1150px){
+              img{
+                width: 73px;
+                height: 73px;
+                padding: 12px;
 
+              }
+            }
             .mig-right-right {
+              margin-top: -8px;
               p {
                 font-size: 30px;
-                font-family: 'YuGo-Bold';
+                //font-family: 'YuGo-Bold';
                 letter-spacing: 1.2px;
                 font-weight: bold;
+                margin-bottom: 19px;
               }
+              @media only screen and (max-width:1150px){
+                p{
+                  font-size: 20px !important;
 
+                }
+              }
               button {
                 font-size: 12px;
-                font-family: 'YuGo-Medium';
+                //font-family: 'YuGo-Medium';
                 letter-spacing: 0.6px;
                 border: 1px solid #DCDCDC;
                 padding: 4px 15px;
@@ -478,20 +498,23 @@
               }
             }
           }
-
           .address {
             display: flex;
-            margin-top: 22px;
+            margin-top: 16px;
 
             img {
               width: 20px;
               background-size: contain;
               margin-right: 20px;
             }
-
+            @media only screen and ( max-width:1050px){
+              p {
+                  font-size: 12px !important;
+                }
+            }
             p {
               font-size: 18px;
-              font-family: 'YuGo-Medium';
+              //font-family: 'YuGo-Medium';
               letter-spacing: 0.24px;
             }
           }
@@ -519,6 +542,11 @@
                 margin-right: 10px;
                 padding: 3px 20px;
                 white-space: nowrap;
+              }
+              @media only screen and ( max-width:1000px){
+                button{
+                  font-size: 12px !important;
+                }
               }
             }
           }

@@ -257,8 +257,7 @@
           height: 76px;
           border: 1px solid;
           width: 50%;
-          font-size: 20px;
-          font-family: 'YuGo-Bold'; }
+          font-size: 20px; }
         .page-guidance-list .group-list-items .wrap-item .item .img-item .left-img .btnx2 .btn-left {
           background-color: #fff;
           background-image: url("../images/btn-icon-1.png");
@@ -304,21 +303,23 @@
       margin-top: 3%;
       background-color: #fff;
       padding: 33px; }
+      @media only screen and (max-width: 1050px) {
+        .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .title {
+          font-size: 25px !important; }
+        .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .content {
+          font-size: 12px !important; } }
       .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .title {
         font-size: 30px;
-        font-family: 'YuGo-Bold';
         letter-spacing: 1.2px;
         font-weight: bold;
         margin-bottom: 10px; }
       .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .content {
-        font-size: 18px;
-        font-family: 'Kozuka Gothic Pr6N'; }
+        font-size: 18px; }
       .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .extend {
         margin-top: 15px;
         display: flex;
         float: right; }
         .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .extend p {
-          font-family: 'Kozuka Gothic Pr6N';
           color: #19a4b9;
           font-size: 14px; }
         .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .extend img {
@@ -335,28 +336,39 @@
           border: 1px solid #DCDCDC;
           padding: 18px;
           margin-right: 20px; }
-        .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
-          font-size: 30px;
-          font-family: 'YuGo-Bold';
-          letter-spacing: 1.2px;
-          font-weight: bold; }
-        .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right button {
-          font-size: 12px;
-          font-family: 'YuGo-Medium';
-          letter-spacing: 0.6px;
-          border: 1px solid #DCDCDC;
-          padding: 4px 15px;
-          border-radius: 5px; }
+        @media only screen and (max-width: 1150px) {
+          .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right img {
+            width: 73px;
+            height: 73px;
+            padding: 12px; } }
+        .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right {
+          margin-top: -8px; }
+          .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
+            font-size: 30px;
+            letter-spacing: 1.2px;
+            font-weight: bold;
+            margin-bottom: 19px; }
+          @media only screen and (max-width: 1150px) {
+            .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right p {
+              font-size: 20px !important; } }
+          .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .mid-right .mig-right-right button {
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            border: 1px solid #DCDCDC;
+            padding: 4px 15px;
+            border-radius: 5px; }
       .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .address {
         display: flex;
-        margin-top: 22px; }
+        margin-top: 16px; }
         .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .address img {
           width: 20px;
           background-size: contain;
           margin-right: 20px; }
+        @media only screen and (max-width: 1050px) {
+          .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .address p {
+            font-size: 12px !important; } }
         .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .address p {
           font-size: 18px;
-          font-family: 'YuGo-Medium';
           letter-spacing: 0.24px; }
       .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .tag {
         display: flex;
@@ -376,6 +388,9 @@
             margin-right: 10px;
             padding: 3px 20px;
             white-space: nowrap; }
+          @media only screen and (max-width: 1000px) {
+            .page-guidance-list .group-list-items .wrap-item .item .img-item .right-img .tag .tag-right button {
+              font-size: 12px !important; } }
   .page-guidance-list .group-list-items .wrap-item .total {
     border: 1px solid red;
     height: 100px; }
