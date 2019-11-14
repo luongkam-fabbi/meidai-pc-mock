@@ -31,7 +31,7 @@
   margin-bottom: 30px; }
 
 .page-feature-detail-pc .group-list-items .wrap-item {
-  background-color: #E7EAEB;
+  background-color: #f1f3f3;
   width: 100%;
   margin-top: 39px; }
   .page-feature-detail-pc .group-list-items .wrap-item .item {
@@ -262,7 +262,7 @@
   background: #fff;
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 200px; }
+  padding-bottom: 110px; }
   .page-feature-detail-pc .extend-other .dot {
     margin: 0 auto 50px;
     font-size: 35px;
@@ -284,6 +284,10 @@
 
 .page-feature-detail-pc .section-slide {
   margin-bottom: 30px; }
+  .page-feature-detail-pc .section-slide .my-container {
+    background: #f1f3f3;
+    padding-bottom: 40px;
+    padding-top: 80px; }
   .page-feature-detail-pc .section-slide .slick-slide img {
     display: block; }
   .page-feature-detail-pc .section-slide .slick-dots-slide {
