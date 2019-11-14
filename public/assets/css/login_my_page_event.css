@@ -1,0 +1,101 @@
+.login_my_page_event .main .section-top img {
+  width: 20px;
+  height: auto; }
+
+.login_my_page_event .main .section-top button {
+  padding: 5px 10px;
+  border: 1px solid #595959;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  display: none; }
+
+.login_my_page_event .main h1.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0; }
+
+.login_my_page_event .main .filter {
+  flex: 1;
+  margin-right: 50px;
+  border: 1px solid #cccccc; }
+  .login_my_page_event .main .filter div, .login_my_page_event .main .filter button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #f9fafa;
+    border-bottom: 1px solid #cccccc; }
+  .login_my_page_event .main .filter button {
+    padding-right: 5px; }
+  .login_my_page_event .main .filter div:nth-child(1) {
+    padding: 20px 20px 10px 20px; }
+  .login_my_page_event .main .filter div:last-child {
+    padding: 20px;
+    border-bottom: none; }
+  .login_my_page_event .main .filter div.active {
+    background: #eceded; }
+  .login_my_page_event .main .filter h3 {
+    font-size: 20px; }
+  .login_my_page_event .main .filter p {
+    font-size: 16px; }
+  .login_my_page_event .main .filter img {
+    width: 20px;
+    height: auto; }
+
+.login_my_page_event .main .event-list {
+  flex: 4; }
+  .login_my_page_event .main .event-list .content {
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.75);
+    margin-bottom: 50px; }
+    .login_my_page_event .main .event-list .content .div-head {
+      width: 100%;
+      padding: 10px; }
+      .login_my_page_event .main .event-list .content .div-head h3 {
+        font-size: 16px;
+        font-weight: bold; }
+      .login_my_page_event .main .event-list .content .div-head div {
+        padding: 0 10px;
+        background: #FD7979; }
+        .login_my_page_event .main .event-list .content .div-head div p {
+          margin-top: 3px;
+          color: #fff; }
+    .login_my_page_event .main .event-list .content .div-foot {
+      width: 100%;
+      padding: 10px; }
+      .login_my_page_event .main .event-list .content .div-foot div.tag-1 {
+        padding: 0 10px;
+        background: #FD7979;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 3px; }
+        .login_my_page_event .main .event-list .content .div-foot div.tag-1 p {
+          margin-top: 3px;
+          color: #fff; }
+      .login_my_page_event .main .event-list .content .div-foot div.tag-2 {
+        padding: 0 10px;
+        background: #7FBB88;
+        border-radius: 3px; }
+        .login_my_page_event .main .event-list .content .div-foot div.tag-2 p {
+          margin-top: 3px;
+          color: #fff; }
+      .login_my_page_event .main .event-list .content .div-foot div.tag-3 {
+        padding: 0 10px;
+        background: #DFE1D3;
+        border-radius: 3px; }
+        .login_my_page_event .main .event-list .content .div-foot div.tag-3 p {
+          margin-top: 3px;
+          color: #fff; }
+      .login_my_page_event .main .event-list .content .div-foot button {
+        height: 40px;
+        width: 150px;
+        background: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        border: 1px solid #000;
+        border-radius: 3px; }
+        .login_my_page_event .main .event-list .content .div-foot button img {
+          height: auto;
+          width: 26px; }
