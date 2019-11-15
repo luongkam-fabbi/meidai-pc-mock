@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //up to top
     const elmScrollTop = '#up-to-top';
     $(window).scroll(function () {
         if ($(this).scrollTop() > 500) {
@@ -104,6 +105,11 @@ $(document).ready(function () {
             }
         });
     })
+    // modal industry
+    // delete item select
+    // $(document).on('click', '.search_checkbox_result_item_delete_btn', function () {
+    //     $(this).removeAtt;
+    // });
 
     const checkBoxCheckAllInit = $('#checkbox_input_field_1_all');
     const checkBoxAllInit = $('.checkbox1');
@@ -112,32 +118,74 @@ $(document).ready(function () {
             $(this).prop('checked', true)
         });
     }
-
     $('.checkbox1').click(function () {
+
         const checkBoxCheckAll = $('#checkbox_input_field_1_all');
         const checkBoxChecked = $('.checkbox1:checked');
         const checkBoxAll = $('.checkbox1');
         if (checkBoxChecked.length === checkBoxAll.length) {
             checkBoxCheckAll.prop('checked', true);
+            const getText = $(this).parent().children('span')[0].textContent;
+            //
+            
+            if ($(this).is(':checked')) {
+                checkExistText(getText)
+            } else {
+                $('.selectcheckbox' + getText).remove();
+
+            }
             return;
         }
         if (checkBoxChecked.length !== checkBoxAll.length) {
-            checkBoxCheckAll.prop('checked', false);
+            const getText = $(this).parent().children('span')[0].textContent;
+            
+            if ($(this).is(':checked')) {
+                checkExistText(getText)
+            } else {
+                $('.selectcheckbox' + getText).remove();
+
+            }
+            return;
+
         }
     });
-
     $('#checkbox_input_field_1_all').click(function () {
         const checkBoxCheckAll = $('#checkbox_input_field_1_all');
         const checkBoxAll = $('.checkbox1');
         if (checkBoxCheckAll.prop('checked')) {
             checkBoxAll.each(function () {
-                $(this).prop('checked', true)
+                $(this).prop('checked', true);
+                const getText = $(this).parent().children('span')[0].textContent;
+
+                $(document).on('click', '#my_search_checkbox_result_item_confirm_btn', function () {
+                    $(checkBoxCheckAll).prop('checked', false);
+                    $(checkBoxAll).prop('checked', false);
+                    $('.search_checkbox_result_item').remove();
+
+                });
+                checkExistText(getText)
+                
             });
         } else {
             checkBoxAll.each(function () {
-                $(this).prop('checked', false)
+                $(this).prop('checked', false);
+                const getText = $(this).parent().children('span')[0].textContent;
+                
+                $('.selectcheckbox' + getText).remove();
+
             });
         }
+    });
+
+    $(document).on('click', '.search_checkbox_result_item', function () {
+        const dataId = $(this).attr("data-id");
+        $(this).remove();
+        $('.checkbox1').each(function() {
+            if ($(this).parent().children('span')[0].textContent == dataId) {
+                $(this).prop('checked', false);
+                $('#checkbox_input_field_1_all').prop('checked', false);
+            }
+        })
     });
 
     $('.option_item_btn').click(function () {
@@ -148,6 +196,28 @@ $(document).ready(function () {
             })
             $(this).prop('class', currentClassName.concat(" option_item_btn_selected"));
         }
+    });
+
+    $('.item-job').click(function () {
+        const currentClassName = $(this).prop('class');
+        if (!currentClassName.includes('item-job-active')) {
+            $(this).children('input').attr('checked', true);
+            $(this).prop('class', currentClassName.concat(" item-job-active"));
+        } else {
+            $(this).prop('class', 'item-job');
+            $(this).children('input').attr('checked', false);
+        }
     })
 });
 
+function checkExistText(getText) {
+    let isNotExist = 1;
+    $(".search_checkbox_result_item_content").each(function() {
+        if ($(this).text() == getText) {
+            isNotExist = 0;
+        }
+    });
+    if (isNotExist) {
+        $(".search_checkbox_results").append("<div class='search_checkbox_result_item selectcheckbox" + getText + "' data-id="+getText+"><div class='search_checkbox_result_item_content'>" + getText + "</div><button class='search_checkbox_result_item_delete_btn btn" + getText + "'></button></div>");
+    }
+}

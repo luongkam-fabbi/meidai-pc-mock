@@ -116,6 +116,14 @@ p {
   }
 }
 .search-popup-common {
+  #my_page_modal_job {
+    .item-job {
+      cursor: pointer;
+    }
+    .item-job-active {
+      background: #c9cdd1;
+    }
+  }
   .page_modal {
     display:none;
     position: fixed; 
@@ -170,6 +178,16 @@ p {
       align-items: center;
     }
     .search_checkbox_result_item{
+      border-radius: 3px;
+      border: #cccccc solid 1px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 10px 10px 0;
+      padding: 5px;
+      align-items: center;
+    }
+    .search_checkbox_result_items{
       border-radius: 3px;
       border: #cccccc solid 1px;
       display: flex;
@@ -396,7 +414,7 @@ p {
         width: 48%;
         margin-bottom: 25px;
         height: 40px;
-        background-color: #ccc;
+        background-color: #f3f4f5;
         color:#191919;
         font-size: 12px;
       }
