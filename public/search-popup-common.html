@@ -1,6 +1,476 @@
-<!-- ----------------------------------Modal insdustry-------------------------------------------------------------->
 <div class="search-popup-common">
-    <div class="page_modal" id="my_page_modal">
+    <!-- ----------------------------------Modal location-------------------------------------------------------------->
+
+    <div class="page_modal modal_location" id="my_page_modal_location">
+        <div class="my-container-child">
+            <!-- page_modal_header -->
+            <div class="page_modal_header">
+                <button class="modal_back_btn">
+                </button>
+                <p class="modal_title">location</p>
+                <button id="my_modal_close_btn_location" class="modal_close_btn">
+                </button>
+            </div>
+            <!-- page_modal_container -->
+            <div class="page_modal_container">
+                <!-- modal_content -->
+                <div class="modal_body">
+                    <div class="student-request__group">
+                        <form action="#" class="student-request__form">
+                            <div class="student-request__elm-area">
+                                <div class="student-request__elm-item student-request__elm-item_half">
+                                    <label class="student-request__elm-heading checkbox-default-area">
+                                        <input type="checkbox"
+                                            class="student-request__checkbox js-checkbox-all-select checkbox-default-input"
+                                            id='checkbox_location_all_01'>
+                                        <span class="checkbox-default-text">メーカー</span>
+                                    </label>
+                                    <ul class="student-request__elm-checkbox-area">
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_01">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_01">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">電気・電子・半導体</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_02">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_02">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">機械・工具・部品・金属</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_03">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_03">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">化学・医療・薬品</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_04">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_04">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">食品</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_05">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_05">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">繊維・ファッション</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_06">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_06">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">自動車関係</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_07">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_07">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">住設・建材</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_maker_08">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_01"
+                                                    name="" id="student_request_industry_maker_08">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">その他</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="student-request__elm-item student-request__elm-item_half">
+                                    <label class="student-request__elm-heading checkbox-default-area">
+                                        <input type="checkbox"
+                                            class="student-request__checkbox js-checkbox-all-select checkbox-default-input"
+                                            id="checkbox_location_all_02" />
+                                        <span class="checkbox-default-text">商社</span>
+                                    </label>
+                                    <ul class="student-request__elm-checkbox-area">
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_01">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_01">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">総合商社</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_02">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_02">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">電気・電子・半導体</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_03">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_03">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">機械・工具・部品・金属</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_04">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_04">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">化学・医療・薬品</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_05">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_05">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">食品</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_06">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_06">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">繊維・ファッション</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_07">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_07">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">住設・建材</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_trading_08">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_02"
+                                                    name="" id="student_request_industry_trading_08">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">その他</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="student-request__elm-item student-request__elm-item_half">
+                                    <label class="student-request__elm-heading checkbox-default-area">
+                                        <input type="checkbox"
+                                            class="student-request__checkbox js-checkbox-all-select checkbox-default-input"
+                                            id="checkbox_location_all_03" />
+                                        <span class="checkbox-default-text">流通・専門店</span>
+                                    </label>
+                                    <ul class="student-request__elm-checkbox-area">
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_distribution_01">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_03"
+                                                    name="" id="student_request_industry_distribution_01">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">総合商社</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_distribution_02">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_03"
+                                                    name="" id="student_request_industry_distribution_02">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text checkbox_location_03">家電・ホームセンター</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_distribution_03">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_03"
+                                                    name="" id="student_request_industry_distribution_03">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">ディーラー</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_distribution_04">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_03"
+                                                    name="" id="student_request_industry_distribution_04">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">その他</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="student-request__elm-item student-request__elm-item_half">
+                                    <label class="student-request__elm-heading checkbox-default-area">
+                                        <input type="checkbox"
+                                            class="student-request__checkbox js-checkbox-all-select checkbox-default-input"
+                                            id="checkbox_location_all_04" />
+                                        <span class="checkbox-default-text">サービス</span>
+                                    </label>
+                                    <ul class="student-request__elm-checkbox-area">
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_01">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_01">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">ホテル・旅行</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_02">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_02">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">レジャー・アミューズメント</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_03">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_03">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">フード・外食</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_04">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_04">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">教育・医療・福祉</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_05">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_05">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">運搬</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_06">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_06">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">設備・メンテナンス</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_07">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_07">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">電気・ガス・エネルギー</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_08">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_08">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">専門サービス</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_09">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_09">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">医療・福祉</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_service_10">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_04"
+                                                    name="" id="student_request_industry_service_10">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">その他</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="student-request__elm-item student-request__elm-item_half">
+                                    <label class="student-request__elm-heading checkbox-default-area">
+                                        <input type="checkbox"
+                                            class="student-request__checkbox js-checkbox-all-select checkbox-default-input"
+                                            id='checkbox_location_all_05' />
+                                        <span class="checkbox-default-text">その他</span>
+                                    </label>
+                                    <ul class="student-request__elm-checkbox-area">
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_01">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_01">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">IT・WEB・通信・情報</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_02">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_02">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">自動車</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_03">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_03">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">建設・土木</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_04">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_04">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">マスコミ・広告・出版・印刷</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_05">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_05">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">設計・研究・出版・印刷</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_06">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_06">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">住宅・不動産</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_07">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_07">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">金融・保険・証券</span>
+                                            </label>
+                                        </li>
+                                        <li class="student-request__elm-checkbox-item">
+                                            <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                                for="student_request_industry_other_08">
+                                                <input type="checkbox"
+                                                    class="student-request__elm-checkbox checkbox-default-input checkbox_location_05"
+                                                    name="" id="student_request_industry_other_08">
+                                                <span
+                                                    class="student-request__elm-checkbox-label-name checkbox-default-text">官公庁・公団・公外・他</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <!-- number-result -->
+                    <div class="result flex__start__center">
+                        <!-- <img src="assets/images/result.png"> -->
+                        <div class="number-result flex__center__end">
+                            293
+                            <span>社</span>
+                        </div>
+                    </div>
+                    <div class="modal_footer_btns">
+                        <button class="footer_btn footer_btn_select">選択する選択する</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------Modal insdustry-------------------------------------------------------------->
+
+    <div class="page_modal modal_industry" id="my_page_modal_industry">
         <div class="my-container-child">
             <!-- page_modal_header -->
             <div class="page_modal_header">
@@ -132,6 +602,269 @@
                         <button class="footer_btn footer_btn_add_cond">+ さらに条件を追加</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------Modal job-------------------------------------------------------------->
+
+    <div class="page_modal modal_job" id="my_page_modal_job">
+        <div class="my-container-child">
+            <!-- page_modal_header -->
+            <div class="page_modal_header">
+                <button class="modal_back_btn">
+                </button>
+                <p class="modal_title">job</p>
+                <button id="my_modal_close_btn_job" class="modal_close_btn">
+                </button>
+            </div>
+            <!-- page_modal_container -->
+            <div class="page_modal_container">
+                <!-- modal_content -->
+                <div class="modal_body">
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+                    <div class="item-job">4343</div>
+
+                </div>
+                <!-- modal_footer -->
+                <div class="modal_footer">
+                    <!-- number-result -->
+                    <div class="result flex__start__center">
+                        <!-- <img src="assets/images/result.png"> -->
+                        <div class="number-result flex__center__end">
+                            293
+                            <span>社</span>
+                        </div>
+                    </div>
+                    <div class="modal_footer_btns">
+                        <button class="footer_btn footer_btn_select">選択する選択する</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------Modal feauture-------------------------------------------------------------->
+
+    <div class="page_modal modal_feature" id="my_page_modal_feature">
+        <div class="my-container-child">
+            <!-- page_modal_header -->
+            <div class="page_modal_header">
+                <button class="modal_back_btn">
+                </button>
+                <p class="modal_title">feauture</p>
+                <button id="my_modal_close_btn_feature" class="modal_close_btn">
+                </button>
+            </div>
+            <!-- page_modal_container -->
+            <div class="page_modal_container">
+                <!-- modal_content -->
+                <div class="modal_body">
+                    <div class="title-popup">title</div>
+                    <div class="list-feature">
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                        <div class="option_item_value_item">
+                            <label class="option_item_value_label checkbox-default-area">
+                                <input type="checkbox" class="checkbox_input_field checkbox-default-input checkbox1"
+                                    id="checkbox_input_field_1_1">
+                                <span class="option_item_value_label_text">中小企業のロールモデルとなる</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal_footer -->
+                <div class="modal_footer">
+                    <!-- number-result -->
+                    <div class="result flex__start__center">
+                        <!-- <img src="assets/images/result.png"> -->
+                        <div class="number-result flex__center__end">
+                            293
+                            <span>社</span>
+                        </div>
+                    </div>
+                    <div class="modal_footer_btns">
+                        <button class="footer_btn footer_btn_select">選択する選択する</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------Modal calender -------------------------------------------------------------->
+    <div class="page_modal" id="my_page_modal_calender">
+        <div class="my-container-child">
+            <!-- page_modal_header -->
+            <div class="page_modal_header">
+                <button class="modal_back_btn">
+                </button>
+                <p class="modal_title" style="font-size: 27px;">開催日を選択してください</p>
+                <button class="modal_close_btn" id="my_modal_close_btn_calender">
+                </button>
+            </div>
+            <!-- page_modal_container -->
+            <div class="page-search-term-date">
+                <div class="calendar" id="calendar-app">
+                    <div class="calendar--day-view" id="day-view">
+                        <span class="day-view-exit" id="day-view-exit">&times;</span>
+                        <span class="day-view-date" id="day-view-date"></span>
+                        <div class="day-view-content">
+                            <div class="day-add-event" id="add-day-event-box" data-active="false">
+                                <div class="row">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar--view" id="calendar-view">
+                        <div class="cview__month">
+                            <span id="calendar-month">May</span>
+                            <div class="calendar-month-right">
+                                <div class="student-request__elm-independent-item">
+                                    <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                        for="student_request_workplace_feature_05">
+                                        <input type="checkbox"
+                                            class="student-request__elm-checkbox checkbox-default-input" name=""
+                                            id="student_request_workplace_feature_05">
+                                        <span
+                                            class="student-request__elm-checkbox-label-name checkbox-default-text">平日を選択</span>
+                                    </label>
+                                </div>
+                                <div class="student-request__elm-independent-item">
+                                    <label class="student-request__elm-checkbox-label checkbox-default-area"
+                                        for="student_request_workplace_feature_06">
+                                        <input type="checkbox"
+                                            class="student-request__elm-checkbox checkbox-default-input" name=""
+                                            id="student_request_workplace_feature_06">
+                                        <span
+                                            class="student-request__elm-checkbox-label-name checkbox-default-text">土日祝を選択</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cview__header"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            月
+                        </div>
+                        <div class="cview__header"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            火
+                        </div>
+                        <div class="cview__header"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            水
+                        </div>
+                        <div class="cview__header"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            木
+                        </div>
+                        <div class="cview__header"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            金
+                        </div>
+                        <div class="cview__header cview__header-blue"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            土
+                        </div>
+                        <div class="cview__header cview__header-red"
+                            style="background-color: #F3F3F3;border-bottom: 1px solid #DDDDDD;border-top: 1px solid #DDDDDD;">
+                            日
+                        </div>
+                        <div class="calendar--view" id="dates">
+                        </div>
+                        <div class="cview__month next-calendar">
+                            <button class="btn-show-all-2 flex__center__center" id="calendar-month-last">
+                                <img class="arrow-right" src="assets/images/arrow-left.png">
+                                前の月
+                            </button>
+                            <button class="btn-show-all-2 flex__center__center cview__month-next"
+                                id="calendar-month-next">
+                                次の月
+                                <img class="arrow-right" src="assets/images/top-screen/arrow-right-black.png">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- modal_footer -->
+                    <div class="modal_footer">
+                        <!-- number-result -->
+                        <div class="result flex__start__center">
+                            <img src="assets/images/result.png">
+                            <div class="number-result flex__center__end">
+                                380
+                                <span>社</span>
+                            </div>
+                        </div>
+                        <div class="modal_footer_btns fix-search">
+                            <button class="footer_btn footer_btn_delete">クリアする</button>
+                            <button class="footer_btn footer_btn_select">選択する</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
