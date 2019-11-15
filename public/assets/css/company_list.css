@@ -146,7 +146,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 20px; }
+    padding: 20px 20px 40px 20px;
+    border-top: 1px solid #ccc; }
     .page-guidance-list .page_modal .modal_footer .result {
       width: 30%; }
       .page-guidance-list .page_modal .modal_footer .result img {

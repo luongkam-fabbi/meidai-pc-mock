@@ -108,7 +108,6 @@ p {
     width: 80%;
     border-radius: 5px; }
   .search-popup-common .page_modal .page_modal_header {
-    display: flex;
     position: relative;
     width: 100%;
     border-bottom: #cccccc solid 1px;
@@ -131,7 +130,7 @@ p {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    width: 100%; }
+    width: 100% !important; }
   .search-popup-common .page_modal .search_checkbox_results {
     display: flex;
     flex-direction: row;
@@ -251,7 +250,6 @@ p {
   .search-popup-common .page_modal .number-result {
     font-size: 30px;
     color: #b14f3a;
-    margin-left: 40px;
     line-height: 1;
     font-weight: bold; }
     .search-popup-common .page_modal .number-result span {
@@ -262,9 +260,10 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 20px; }
+    padding: 20px 20px 40px 20px;
+    border-top: 1px solid #ccc; }
     .search-popup-common .page_modal .modal_footer .result {
-      width: 40%; }
+      width: 46% !important; }
       .search-popup-common .page_modal .modal_footer .result img {
         width: 66px;
         height: auto;
@@ -273,9 +272,8 @@ p {
         font-size: 18px;
         color: #5d5d5d; }
     .search-popup-common .page_modal .modal_footer .modal_footer_btns {
-      width: 50%;
-      display: flex;
-      flex-direction: row; }
+      width: 96% !important;
+      text-align: center; }
       .search-popup-common .page_modal .modal_footer .modal_footer_btns .footer_btn {
         font-size: 12px;
         border-radius: 3px; }
@@ -291,6 +289,17 @@ p {
         padding: 10px;
         background-color: #f2f2f2;
         border: #cccccc solid 1px; }
+
+.search-popup-common .modal_location .number-result, .search-popup-common .modal_job .number-result, .search-popup-common .modal_feature .number-result {
+  margin-left: 40px; }
+
+.search-popup-common .modal_location .modal_footer, .search-popup-common .modal_job .modal_footer, .search-popup-common .modal_feature .modal_footer {
+  position: relative; }
+  .search-popup-common .modal_location .modal_footer .modal_footer_btns, .search-popup-common .modal_job .modal_footer .modal_footer_btns, .search-popup-common .modal_feature .modal_footer .modal_footer_btns {
+    position: absolute;
+    text-align: center;
+    display: unset !important;
+    flex-direction: unset !important; }
 
 .search-popup-common .modal_location .modal_footer .result {
   width: 46%; }

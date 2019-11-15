@@ -135,7 +135,6 @@ p {
       border-radius: 5px;
     }
     .page_modal_header{
-      display: flex;
       position: relative;
       width: 100%;
       border-bottom: #cccccc solid 1px; 
@@ -161,7 +160,7 @@ p {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
-      width: 100%;
+      width: 100% !important;
     }
     .search_checkbox_results{
       display: flex;
@@ -308,7 +307,7 @@ p {
     .number-result {
       font-size: 30px;
       color: #b14f3a;
-      margin-left: 40px;
+      // margin-left: 40px;
       line-height: 1;
       font-weight: bold;
       span {
@@ -321,9 +320,10 @@ p {
       display: flex;
       flex-direction:row;
       width: 100%;
-      padding: 20px;
+      padding: 20px 20px 40px 20px;
+      border-top: 1px solid #ccc;
       .result{
-        width: 40%;
+        width: 46% !important;
         img {
           width: 66px;
           height: auto;
@@ -335,9 +335,8 @@ p {
         }
       }
       .modal_footer_btns{
-        width: 50%;
-        display: flex;
-        flex-direction: row;
+        width: 96% !important;
+        text-align: center;
         .footer_btn{
           font-size: 12px;
           border-radius: 3px;
@@ -357,6 +356,20 @@ p {
           background-color: #f2f2f2;
           border: #cccccc solid 1px;
         }
+      }
+    }
+  }
+  .modal_location,.modal_job,.modal_feature{
+    .number-result {
+      margin-left: 40px;
+    }
+    .modal_footer{
+      position: relative;
+      .modal_footer_btns{
+        position: absolute;
+        text-align: center;
+        display: unset !important;
+        flex-direction: unset !important;
       }
     }
   }
