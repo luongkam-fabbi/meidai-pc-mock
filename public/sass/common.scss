@@ -179,6 +179,16 @@ p {
       padding: 5px;
       align-items: center;
     }
+    .search_checkbox_result_items{
+      border-radius: 3px;
+      border: #cccccc solid 1px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 10px 10px 0;
+      padding: 5px;
+      align-items: center;
+    }
     .search_checkbox_result_item_delete_btn{
       background: url('../images/icon-close.png') no-repeat;
       background-size: 15px;
