@@ -197,6 +197,10 @@ $(document).ready(function () {
             $(this).prop('class', currentClassName.concat(" option_item_btn_selected"));
         }
     })
+//checked input
+$('.item-job input').click(function(){
+    alert('hello')
+})
 });
 
 function checkExistText(getText) {
