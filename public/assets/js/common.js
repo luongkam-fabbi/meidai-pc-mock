@@ -196,6 +196,17 @@ $(document).ready(function () {
             })
             $(this).prop('class', currentClassName.concat(" option_item_btn_selected"));
         }
+    });
+
+    $('.item-job').click(function () {
+        const currentClassName = $(this).prop('class');
+        if (!currentClassName.includes('item-job-active')) {
+            $(this).children('input').attr('checked', true);
+            $(this).prop('class', currentClassName.concat(" item-job-active"));
+        } else {
+            $(this).prop('class', 'item-job');
+            $(this).children('input').attr('checked', false);
+        }
     })
 //checked input
 $('.item-job input').click(function(){
