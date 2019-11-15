@@ -90,6 +90,12 @@ p {
       background: url("../images/book.png") no-repeat 25px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
       background: url("../images/book.png") no-repeat 25px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
 
+.search-popup-common #my_page_modal_job .item-job {
+  cursor: pointer; }
+
+.search-popup-common #my_page_modal_job .item-job-active {
+  background: #c9cdd1; }
+
 .search-popup-common .page_modal {
   display: none;
   position: fixed;
@@ -328,7 +334,7 @@ p {
     width: 48%;
     margin-bottom: 25px;
     height: 40px;
-    background-color: #ccc;
+    background-color: #f3f4f5;
     color: #191919;
     font-size: 12px; }
 
