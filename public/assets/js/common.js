@@ -48,9 +48,7 @@ $(document).ready(function () {
     });
 
     // modal location
-    $('.cview--date').click(function () {
-        $(this).toggleClass('cview--date-focus');
-    });
+
     let arrIndex = [1, 2, 3, 4, 5];
 
     arrIndex.forEach((item, index) => {
@@ -152,3 +150,4 @@ $(document).ready(function () {
         }
     })
 });
+
