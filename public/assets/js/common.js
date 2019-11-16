@@ -111,20 +111,27 @@ $(document).ready(function () {
     //     $(this).removeAtt;
     // });
 
-    const checkBoxCheckAllInit = $('#checkbox_input_field_1_all');
-    const checkBoxAllInit = $('.checkbox1');
-    if (checkBoxCheckAllInit.prop('checked')) {
-        checkBoxAllInit.each(function () {
-            $(this).prop('checked', true)
-        });
-    }
+    // const checkBoxCheckAllInit = $('.checkbox_input_field_1_all');
+    // const checkBoxAllInit = $('.checkbox1');
+    // checkBoxCheckAllInit.each(function () {
+    //     if ($(this).prop('checked')) {
+    //         checkBoxAllInit.each(function () {
+    //             $(this).prop('checked', true)
+    //         });
+    //     }
+    // })
+    
     $('.checkbox1').click(function () {
+        const parentCheckBox = $(this).parentsUntil('.option_item_values').parent();
 
-        const checkBoxCheckAll = $('#checkbox_input_field_1_all');
-        const checkBoxChecked = $('.checkbox1:checked');
-        const checkBoxAll = $('.checkbox1');
+        const checkBoxCheckAll = parentCheckBox.find('.checkbox_input_field_1_all');
+        const checkBoxChecked = parentCheckBox.find('.checkbox1:checked');
+        const checkBoxAll = parentCheckBox.find('.checkbox1');
         if (checkBoxChecked.length === checkBoxAll.length) {
-            checkBoxCheckAll.prop('checked', true);
+            checkBoxCheckAll.each(function() {
+                $(this).prop('checked', true);
+            })
+            
             const getText = $(this).parent().children('span')[0].textContent;
             //
 
@@ -137,44 +144,61 @@ $(document).ready(function () {
             return;
         }
         if (checkBoxChecked.length !== checkBoxAll.length) {
+            checkBoxCheckAll.each(function() {
+                $(this).prop('checked', false);
+            })
+
             const getText = $(this).parent().children('span')[0].textContent;
 
             if ($(this).is(':checked')) {
                 checkExistText(getText)
             } else {
-                $('.selectcheckbox' + getText).remove();
-
+                $('.search_checkbox_result_item').each(function() {
+                    if ($(this).attr('data-id') == getText) {
+                        $(this).remove();
+                    }
+                });
             }
             return;
 
         }
     });
-    $('#checkbox_input_field_1_all').click(function () {
-        const checkBoxCheckAll = $('#checkbox_input_field_1_all');
-        const checkBoxAll = $('.checkbox1');
-        if (checkBoxCheckAll.prop('checked')) {
-            checkBoxAll.each(function () {
-                $(this).prop('checked', true);
-                const getText = $(this).parent().children('span')[0].textContent;
+    $('.checkbox_input_field_1_all').each(function (index) {
 
-                $(document).on('click', '#my_search_checkbox_result_item_confirm_btn', function () {
-                    $(checkBoxCheckAll).prop('checked', false);
-                    $(checkBoxAll).prop('checked', false);
-                    $('.search_checkbox_result_item').remove();
-
+        $(this).click(function () {
+            const checkBoxCheckAll = $(this);
+            const checkBoxAll = $('.checkbox1');
+            if (checkBoxCheckAll.prop('checked')) {
+                checkBoxAll.each(function () {
+                    const idCheck = $(this).parentsUntil('.option_item_values').parent().attr('id');
+                    if(index + 1 === parseInt(idCheck.split("0").pop())) {
+                        $(this).prop('checked', true);
+                        const getText = $(this).parent().children('span')[0].textContent;
+                        checkExistText(getText)
+                    }
                 });
-                checkExistText(getText)
+            } else {
+                checkBoxAll.each(function () {
+                    const idCheck = $(this).parentsUntil('.option_item_values').parent().attr('id');
+                    if(index + 1 === parseInt(idCheck.split("0").pop())) {
+                        $(this).prop('checked', false);
+                        const getText = $(this).parent().children('span')[0].textContent;
+                        $('.search_checkbox_result_item').each(function() {
+                            if ($(this).attr('data-id') == getText) {
+                                $(this).remove();
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    })
 
-            });
-        } else {
-            checkBoxAll.each(function () {
-                $(this).prop('checked', false);
-                const getText = $(this).parent().children('span')[0].textContent;
+    $(document).on('click', '#my_search_checkbox_result_item_confirm_btn', function () {
+        $('.checkbox_input_field_1_all').prop('checked', false);
+        $('.checkbox1').prop('checked', false);
+        $('.search_checkbox_result_item').remove();
 
-                $('.selectcheckbox' + getText).remove();
-
-            });
-        }
     });
 
     $(document).on('click', '.search_checkbox_result_item', function () {
@@ -183,7 +207,9 @@ $(document).ready(function () {
         $('.checkbox1').each(function () {
             if ($(this).parent().children('span')[0].textContent == dataId) {
                 $(this).prop('checked', false);
-                $('#checkbox_input_field_1_all').prop('checked', false);
+                $('.checkbox_input_field_1_all').each(function() {
+                    $(this).prop('checked', false);
+                })
             }
         })
     });
@@ -197,15 +223,16 @@ $(document).ready(function () {
             $(this).prop('class', currentClassName.concat(" option_item_btn_selected"));
         }
     });
-
-    console.log($(".option_item_btn")[1]);
-    for (var i = 0; i < 100; i++) {
-        if($('.option_item_btn'+i)){
-
-            $('.option_item_values'+i).show();
-        }
-    }
+    for (let i = 0; i < 20; i++) {
+        $(document).on('click', '#option_item_btn_0'+i+'', function () {
+            var showItem = $('#option_item_values_0'+i+'');
+            $('.option_item_values').css("display", "none");
+            showItem.css("display", "block");
+            showItem.attr
+        })
+    };
     function checkExistText(getText) {
+
         let isNotExist = 1;
         $(".search_checkbox_result_item_content").each(function () {
             if ($(this).text() == getText) {

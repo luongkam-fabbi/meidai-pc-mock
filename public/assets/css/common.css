@@ -201,6 +201,8 @@ p {
         border-radius: 3px; }
       .search-popup-common .page_modal .modal_content .options_list .option_item_btn_selected {
         background-color: #c9cdd1 !important; }
+    .search-popup-common .page_modal .modal_content #option_item_values_01 {
+      display: block; }
     .search-popup-common .page_modal .modal_content .option_item_values {
       display: none;
       padding: 20px; }
