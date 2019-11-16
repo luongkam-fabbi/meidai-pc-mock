@@ -127,7 +127,7 @@ $(document).ready(function () {
             checkBoxCheckAll.prop('checked', true);
             const getText = $(this).parent().children('span')[0].textContent;
             //
-            
+
             if ($(this).is(':checked')) {
                 checkExistText(getText)
             } else {
@@ -138,7 +138,7 @@ $(document).ready(function () {
         }
         if (checkBoxChecked.length !== checkBoxAll.length) {
             const getText = $(this).parent().children('span')[0].textContent;
-            
+
             if ($(this).is(':checked')) {
                 checkExistText(getText)
             } else {
@@ -164,13 +164,13 @@ $(document).ready(function () {
 
                 });
                 checkExistText(getText)
-                
+
             });
         } else {
             checkBoxAll.each(function () {
                 $(this).prop('checked', false);
                 const getText = $(this).parent().children('span')[0].textContent;
-                
+
                 $('.selectcheckbox' + getText).remove();
 
             });
@@ -180,7 +180,7 @@ $(document).ready(function () {
     $(document).on('click', '.search_checkbox_result_item', function () {
         const dataId = $(this).attr("data-id");
         $(this).remove();
-        $('.checkbox1').each(function() {
+        $('.checkbox1').each(function () {
             if ($(this).parent().children('span')[0].textContent == dataId) {
                 $(this).prop('checked', false);
                 $('#checkbox_input_field_1_all').prop('checked', false);
@@ -198,30 +198,22 @@ $(document).ready(function () {
         }
     });
 
-    $('.item-job').click(function () {
-        const currentClassName = $(this).prop('class');
-        if (!currentClassName.includes('item-job-active')) {
-            $(this).children('input').attr('checked', true);
-            $(this).prop('class', currentClassName.concat(" item-job-active"));
-        } else {
-            $(this).prop('class', 'item-job');
-            $(this).children('input').attr('checked', false);
-        }
-    })
-//checked input
-$('.item-job input').click(function(){
-    alert('hello')
-})
-});
+    console.log($(".option_item_btn")[1]);
+    for (var i = 0; i < 100; i++) {
+        if($('.option_item_btn'+i)){
 
-function checkExistText(getText) {
-    let isNotExist = 1;
-    $(".search_checkbox_result_item_content").each(function() {
-        if ($(this).text() == getText) {
-            isNotExist = 0;
+            $('.option_item_values'+i).show();
         }
-    });
-    if (isNotExist) {
-        $(".search_checkbox_results").append("<div class='search_checkbox_result_item selectcheckbox" + getText + "' data-id="+getText+"><div class='search_checkbox_result_item_content'>" + getText + "</div><button class='search_checkbox_result_item_delete_btn btn" + getText + "'></button></div>");
     }
-}
+    function checkExistText(getText) {
+        let isNotExist = 1;
+        $(".search_checkbox_result_item_content").each(function () {
+            if ($(this).text() == getText) {
+                isNotExist = 0;
+            }
+        });
+        if (isNotExist) {
+            $(".search_checkbox_results").append("<div class='search_checkbox_result_item selectcheckbox" + getText + "' data-id=" + getText + "><div class='search_checkbox_result_item_content'>" + getText + "</div><button class='search_checkbox_result_item_delete_btn btn" + getText + "'></button></div>");
+        }
+    }
+});

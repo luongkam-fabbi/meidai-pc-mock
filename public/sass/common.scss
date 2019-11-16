@@ -245,9 +245,8 @@ p {
         }
       }
       .option_item_values{
+        display: none;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
         ol{
           padding-left: 10px;
         }
