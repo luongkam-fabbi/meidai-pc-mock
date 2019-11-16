@@ -23,6 +23,7 @@
     "gulp-watch-sass": "^1.4.1"
   },
   "dependencies": {
+    "expo": "^35.0.1",
     "gh-pages": "^2.1.1",
     "gulp-live-server": "0.0.31",
     "gulp-util": "^3.0.8",

@@ -79,12 +79,14 @@ $(document).ready(function () {
         });
     });
 
-    const arrBtnOpenModal = ["#btn_open_modal_location", "#btn_open_modal_industry", "#btn_open_modal_job", "#btn_open_modal_feature"];
+    const arrBtnOpenModal = ["#btn_open_modal_location", "#btn_open_modal_industry", "#btn_open_modal_job", "#btn_open_modal_feature",'#btn_popup_check'];
     const arrModal = [
         "#my_page_modal_location",
         "#my_page_modal_industry",
         "#my_page_modal_job",
-        "#my_page_modal_feature"];
+        "#my_page_modal_feature",
+        "#popup_check"
+    ];
 
     arrBtnOpenModal.forEach((item, index) => {
         function togleModal(isOpen) {
@@ -98,7 +100,9 @@ $(document).ready(function () {
         $('.modal_close_btn').click(function () {
             togleModal(false);
         });
-
+        $('.btn_close_modal').click(function () {
+            togleModal(false);
+        });
         $('.page_modal').click(function (e) {
             if (e.target === this) {
                 togleModal(false);
