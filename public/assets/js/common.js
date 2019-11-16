@@ -105,21 +105,6 @@ $(document).ready(function () {
             }
         });
     })
-    // modal industry
-    // delete item select
-    // $(document).on('click', '.search_checkbox_result_item_delete_btn', function () {
-    //     $(this).removeAtt;
-    // });
-
-    // const checkBoxCheckAllInit = $('.checkbox_input_field_1_all');
-    // const checkBoxAllInit = $('.checkbox1');
-    // checkBoxCheckAllInit.each(function () {
-    //     if ($(this).prop('checked')) {
-    //         checkBoxAllInit.each(function () {
-    //             $(this).prop('checked', true)
-    //         });
-    //     }
-    // })
     
     $('.checkbox1').click(function () {
         const parentCheckBox = $(this).parentsUntil('.option_item_values').parent();
@@ -243,4 +228,15 @@ $(document).ready(function () {
             $(".search_checkbox_results").append("<div class='search_checkbox_result_item selectcheckbox" + getText + "' data-id=" + getText + "><div class='search_checkbox_result_item_content'>" + getText + "</div><button class='search_checkbox_result_item_delete_btn btn" + getText + "'></button></div>");
         }
     }
+
+    $('.item-job').click(function () {
+        const currentClassName = $(this).prop('class');
+        if (!currentClassName.includes('item-job-active')) {
+            $(this).children('input').attr('checked', true);
+            $(this).prop('class', currentClassName.concat(" item-job-active"));
+        } else {
+            $(this).prop('class', 'item-job');
+            $(this).children('input').attr('checked', false);
+        }
+    })
 });
