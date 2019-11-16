@@ -244,10 +244,12 @@ p {
           background-color: #c9cdd1 !important;
         }
       }
+      #option_item_values_01{
+        display: block;
+      }
       .option_item_values{
+        display: none;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
         ol{
           padding-left: 10px;
         }
@@ -418,6 +420,7 @@ p {
         color:#191919;
         font-size: 12px;
       }
+
     }
   }
   .modal_feature{
