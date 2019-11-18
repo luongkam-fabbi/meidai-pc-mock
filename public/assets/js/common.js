@@ -125,7 +125,9 @@ $(document).ready(function () {
             //
 
             if ($(this).is(':checked')) {
-                checkExistText(getText)
+                const parentName = $(this).parentsUntil(".option_item_values").parent().find('.checkbox_input_field_1_all').parent().children('span')[0].textContent;
+                const textCompare = parentName + "(" + getText + ")";
+                checkExistText(textCompare)
             } else {
                 $('.selectcheckbox' + getText).remove();
 
@@ -138,12 +140,14 @@ $(document).ready(function () {
             })
 
             const getText = $(this).parent().children('span')[0].textContent;
+            const parentName = $(this).parentsUntil(".option_item_values").parent().find('.checkbox_input_field_1_all').parent().children('span')[0].textContent;
+            const textCompare = parentName + "(" + getText + ")";
 
             if ($(this).is(':checked')) {
-                checkExistText(getText)
+                checkExistText(textCompare)
             } else {
                 $('.search_checkbox_result_item').each(function() {
-                    if ($(this).attr('data-id') == getText) {
+                    if ($(this).attr('data-id') == textCompare) {
                         $(this).remove();
                     }
                 });
@@ -155,6 +159,7 @@ $(document).ready(function () {
     $('.checkbox_input_field_1_all').each(function (index) {
 
         $(this).click(function () {
+            const parentName = $(this).parent().children('span')[0].textContent;
             const checkBoxCheckAll = $(this);
             const checkBoxAll = $('.checkbox1');
             if (checkBoxCheckAll.prop('checked')) {
@@ -163,7 +168,8 @@ $(document).ready(function () {
                     if(index + 1 === parseInt(idCheck.split("0").pop())) {
                         $(this).prop('checked', true);
                         const getText = $(this).parent().children('span')[0].textContent;
-                        checkExistText(getText)
+                        const textCompare = parentName + "(" + getText + ")";
+                        checkExistText(textCompare)
                     }
                 });
             } else {
@@ -172,8 +178,9 @@ $(document).ready(function () {
                     if(index + 1 === parseInt(idCheck.split("0").pop())) {
                         $(this).prop('checked', false);
                         const getText = $(this).parent().children('span')[0].textContent;
+                        const textCompare = parentName + "(" + getText + ")";
                         $('.search_checkbox_result_item').each(function() {
-                            if ($(this).attr('data-id') == getText) {
+                            if ($(this).attr('data-id') == textCompare) {
                                 $(this).remove();
                             }
                         });
@@ -194,7 +201,10 @@ $(document).ready(function () {
         const dataId = $(this).attr("data-id");
         $(this).remove();
         $('.checkbox1').each(function () {
-            if ($(this).parent().children('span')[0].textContent == dataId) {
+            const getText = $(this).parent().children('span')[0].textContent;
+            const parentName = $(this).parentsUntil(".option_item_values").parent().find('.checkbox_input_field_1_all').parent().children('span')[0].textContent;
+            const textCompare = parentName + "(" + getText + ")";
+            if (textCompare == dataId) {
                 $(this).prop('checked', false);
                 $('.checkbox_input_field_1_all').each(function() {
                     $(this).prop('checked', false);
