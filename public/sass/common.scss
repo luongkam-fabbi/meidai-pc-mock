@@ -61,13 +61,66 @@ p {
     }
   }
 }
+@media only screen and ( max-width:768px){
+  .my-container {
+    padding: 0 15px;
+  }
+  
+  .section-breadcrumb {
+    margin: unset;
+      .link-page {
+        padding: 0 40px;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+      }
+      img {
+        width: 20px;
+        height: auto;
+        margin: 20px 5px;
+      }
+      a {
+        font-size: 16px;
+      }
+      a.active {
+        text-decoration: underline;
+      }
+  }
+}
+@media only screen and ( max-width:575px){
+  .my-container {
+    padding: 0 15px;
+  }
+
+}
+@media only screen and ( max-width:415px){
+
+  .section-breadcrumb {
+    margin: unset;
+      .link-page {
+        padding: 0 15px;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+      }
+      img {
+        width: 20px;
+        height: auto;
+        margin: 20px 5px;
+      }
+      a {
+        font-size: 16px;
+      }
+      a.active {
+        text-decoration: underline;
+      }
+  }
+}
 .my-container-child {
   max-width: 1024px;
   background: #fff;
   margin: 0 auto;
 }
 .btnx2{
-  @media only screen and ( max-width:1300px){
+  @media only screen and (min-width:1150px) and ( max-width:1300px){
     .btn {
       font-size: 12px !important;
     }
@@ -82,7 +135,7 @@ p {
       }
     }
   }
-  @media only screen and ( max-width:1150px){
+  @media only screen and (min-width:1000px)  and ( max-width:1150px){
     .btn {
       font-size: 10px !important;
     }
@@ -95,7 +148,7 @@ p {
       }
     }
   }
-  @media only screen and ( max-width:1000px){
+  @media only screen  and (min-width:768px)  and ( max-width:1000px){
     .btn-left{
       background-position: 20px !important;
       background-size: 20px !important;

@@ -48,12 +48,50 @@ p {
   .section-breadcrumb .my-container a.active {
     text-decoration: underline; }
 
+@media only screen and (max-width: 768px) {
+  .my-container {
+    padding: 0 15px; }
+  .section-breadcrumb {
+    margin: unset; }
+    .section-breadcrumb .link-page {
+      padding: 0 40px;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc; }
+    .section-breadcrumb img {
+      width: 20px;
+      height: auto;
+      margin: 20px 5px; }
+    .section-breadcrumb a {
+      font-size: 16px; }
+    .section-breadcrumb a.active {
+      text-decoration: underline; } }
+
+@media only screen and (max-width: 575px) {
+  .my-container {
+    padding: 0 15px; } }
+
+@media only screen and (max-width: 415px) {
+  .section-breadcrumb {
+    margin: unset; }
+    .section-breadcrumb .link-page {
+      padding: 0 15px;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc; }
+    .section-breadcrumb img {
+      width: 20px;
+      height: auto;
+      margin: 20px 5px; }
+    .section-breadcrumb a {
+      font-size: 16px; }
+    .section-breadcrumb a.active {
+      text-decoration: underline; } }
+
 .my-container-child {
   max-width: 1024px;
   background: #fff;
   margin: 0 auto; }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 1150px) and (max-width: 1300px) {
   .btnx2 .btn {
     font-size: 12px !important; }
   .btnx2 .btn-left {
@@ -65,7 +103,7 @@ p {
       background: url("../images/btn-icon-1.png") no-repeat 30px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
       background: url("../images/btn-icon-1.png") no-repeat 30px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 1000px) and (max-width: 1150px) {
   .btnx2 .btn {
     font-size: 10px !important; }
   .btnx2 .btn-right {
@@ -75,7 +113,7 @@ p {
       background: url("../images/book.png") no-repeat 40px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
       background: url("../images/book.png") no-repeat 40px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   .btnx2 .btn-left {
     background-position: 20px !important;
     background-size: 20px !important; }
