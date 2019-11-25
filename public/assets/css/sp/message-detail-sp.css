@@ -1,0 +1,192 @@
+@media (min-width: 768px) {
+  .message-container-sp {
+    display: none; } }
+
+@media (max-width: 767.98px) {
+  .message-container-sp {
+    display: flex; }
+    .message-container-sp .message-top {
+      position: relative;
+      height: 100px;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+      font-size: 32px;
+      font-weight: bold; }
+      .message-container-sp .message-top img {
+        position: absolute;
+        left: 20px;
+        height: 60px;
+        width: auto;
+        top: 20px; }
+    .message-container-sp .message-content {
+      background: #f3f3f3;
+      padding: 110px 10px 25px 10px;
+      position: relative; }
+      .message-container-sp .message-content .mess-dateview {
+        height: 44px;
+        width: 218px;
+        border-radius: 999px;
+        background: #cfcfcf;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        position: absolute;
+        top: 25px;
+        left: calc(50% - 109px);
+        color: #000; }
+      .message-container-sp .message-content .my-message {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px;
+        padding-right: 30px; }
+        .message-container-sp .message-content .my-message .mess-time {
+          font-size: 20px;
+          letter-spacing: 1px;
+          color: #3a3a3a;
+          margin-right: 15px; }
+        .message-container-sp .message-content .my-message .mess-content {
+          background: #176896;
+          color: #fff;
+          border-radius: 20px;
+          padding: 30px;
+          font-size: 2.4rem;
+          line-height: 1.9;
+          letter-spacing: 1px;
+          max-width: 70%;
+          position: relative; }
+          .message-container-sp .message-content .my-message .mess-content::after {
+            position: absolute;
+            content: url(../../images/mess-arr-right-primary.png);
+            top: 0;
+            right: -30px; }
+      .message-container-sp .message-content .other-message {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px; }
+        .message-container-sp .message-content .other-message .mess-time {
+          font-size: 20px;
+          letter-spacing: 1px;
+          color: #3a3a3a;
+          margin-left: 15px; }
+        .message-container-sp .message-content .other-message .mess-content {
+          background: #fff;
+          color: #3a3a3a;
+          border-radius: 20px;
+          padding: 30px;
+          font-size: 2.4rem;
+          line-height: 1.9;
+          letter-spacing: 1px;
+          max-width: 70%;
+          position: relative; }
+          .message-container-sp .message-content .other-message .mess-content::after {
+            position: absolute;
+            content: url(../../images/mess-arr-left-light.png);
+            top: 0;
+            left: -20px; }
+        .message-container-sp .message-content .other-message .mess-avt {
+          height: 90px;
+          width: 90px;
+          background: #fff;
+          border: 1px solid rgba(112, 112, 112, 0.5);
+          border-radius: 999px;
+          margin-right: 20px; }
+          .message-container-sp .message-content .other-message .mess-avt img {
+            width: 60%;
+            height: auto; }
+    .message-container-sp .message-group-input .top-group {
+      border-top: 1px solid rgba(112, 112, 112, 0.5);
+      border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+      height: 80px;
+      padding: 0 35px; }
+      .message-container-sp .message-group-input .top-group .upload-items {
+        margin-right: 50px;
+        display: flex;
+        height: 47px;
+        width: auto; }
+      .message-container-sp .message-group-input .top-group .upload-pdf {
+        background: #CD0606;
+        border-radius: 3px;
+        color: #fff;
+        height: 47px;
+        width: 50px;
+        font-size: 21px; }
+      .message-container-sp .message-group-input .top-group .btn--send {
+        height: 54px;
+        width: 90px;
+        border-radius: 3px;
+        background: #176896;
+        font-size: 2.6rem;
+        color: #fff;
+        letter-spacing: 1px; }
+    .message-container-sp .message-group-input .mess-input {
+      width: 100%;
+      font-size: 26px;
+      color: #3a3a3a;
+      padding: 10px 35px;
+      transition: all 0.5s ease; }
+      .message-container-sp .message-group-input .mess-input::placeholder {
+        color: #B2B2B2; } }
+
+@media (max-width: 575.98px) {
+  .message-container-sp .message-top {
+    height: 60px;
+    font-size: 20px; }
+    .message-container-sp .message-top img {
+      left: 20px;
+      height: 30px;
+      top: 15px; }
+  .message-container-sp .message-content {
+    padding: 60px 10px 25px 10px; }
+    .message-container-sp .message-content .mess-dateview {
+      height: 30px;
+      width: 150px;
+      font-size: 14px;
+      top: 15px;
+      left: calc(50% - 75px); }
+    .message-container-sp .message-content .my-message {
+      margin-bottom: 20px;
+      padding-right: 10px; }
+      .message-container-sp .message-content .my-message .mess-time {
+        font-size: 12px;
+        margin-right: 10px; }
+      .message-container-sp .message-content .my-message .mess-content {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        max-width: 80%; }
+        .message-container-sp .message-content .my-message .mess-content::after {
+          right: -15px; }
+    .message-container-sp .message-content .other-message {
+      margin-bottom: 20px; }
+      .message-container-sp .message-content .other-message .mess-time {
+        font-size: 12px;
+        margin-left: 10px; }
+      .message-container-sp .message-content .other-message .mess-content {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        max-width: 65%;
+        position: relative; }
+        .message-container-sp .message-content .other-message .mess-content::after {
+          left: -15px; }
+      .message-container-sp .message-content .other-message .mess-avt {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px; }
+  .message-container-sp .message-group-input .top-group {
+    height: 60px;
+    padding: 0 15px; }
+    .message-container-sp .message-group-input .top-group .upload-items {
+      margin-right: 20px;
+      height: 35px; }
+    .message-container-sp .message-group-input .top-group .upload-pdf {
+      height: 35px;
+      width: 40px;
+      font-size: 14px; }
+    .message-container-sp .message-group-input .top-group .btn--send {
+      height: 40px;
+      width: 60px;
+      font-size: 2rem; }
+  .message-container-sp .message-group-input .mess-input {
+    font-size: 18px;
+    padding: 10px 15px; } }

@@ -1,0 +1,157 @@
+@media (min-width: 768px) {
+  .message-list-sp {
+    display: none; } }
+
+@media (max-width: 767.98px) {
+  .message-list-sp {
+    display: flex; }
+  .message-list-sp .tab-head > input[type="radio"] {
+    position: absolute;
+    left: -200vw; }
+  .message-list-sp .tab-set .tab-panel {
+    display: none; }
+  .message-list-sp .tab-head > label {
+    position: relative;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 0;
+    width: 25%;
+    height: 100px; }
+    .message-list-sp .tab-head > label .number-mess {
+      height: 37px;
+      width: 37px;
+      border-radius: 3px;
+      background: #cd0606;
+      font-size: 2rem;
+      color: #fff;
+      padding-top: 3px;
+      font-weight: 400;
+      margin-left: 20px; }
+  .message-list-sp .tab-head > input:checked + label {
+    background: #fff;
+    border-bottom: 2px solid #222222; }
+  .message-list-sp .tab-head {
+    background: #fff; }
+  .message-list-sp .tab-head > label[for="tab1"] {
+    position: relative; }
+  .message-list-sp .tab-set .tab-panels {
+    background: #f3f3f3;
+    padding: 30px 40px; }
+    .message-list-sp .tab-set .tab-panels .searchbox-mess {
+      height: 80px;
+      width: 100%;
+      background: #fff;
+      color: #959595;
+      font-size: 2.5rem;
+      padding-left: 50px;
+      border-radius: 3px;
+      margin-bottom: 25px; }
+    .message-list-sp .tab-set .tab-panels .mess-items {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+      background: #fff;
+      padding: 25px 20px;
+      margin-bottom: 30px;
+      position: relative; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-avt {
+        height: 100px;
+        width: 100px;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 999px;
+        margin-right: 20px; }
+        .message-list-sp .tab-set .tab-panels .mess-items .mess-avt img {
+          width: 60%;
+          height: auto; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-content .title {
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        color: #242424;
+        font-weight: bold; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-content .shot-content {
+        font-size: 2.2rem;
+        margin-bottom: 20px; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-content .mess-time {
+        color: #8a8a8a;
+        font-size: 1.8rem; }
+      .message-list-sp .tab-set .tab-panels .mess-items:after {
+        position: absolute;
+        content: url(../../images/mess-tag-read.png);
+        top: 0;
+        right: 10px; }
+      .message-list-sp .tab-set .tab-panels .mess-items.unread:after {
+        content: url(../../images/mess-tag-unread.png); }
+      .message-list-sp .tab-set .tab-panels .mess-items.unread::before {
+        display: none; }
+      .message-list-sp .tab-set .tab-panels .mess-items:before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: #e6e6e6;
+        top: 0;
+        left: 0;
+        opacity: 0.6; } }
+
+@media (max-width: 575.98px) {
+  .message-list-sp {
+    display: flex; }
+  .message-list-sp .tab-head > input[type="radio"] {
+    position: absolute;
+    left: -200vw; }
+  .message-list-sp .tab-set .tab-panel {
+    display: none; }
+  .message-list-sp .tab-head > label {
+    font-size: 18px;
+    height: 60px; }
+    .message-list-sp .tab-head > label .number-mess {
+      height: 25px;
+      width: 25px;
+      font-size: 1.4rem;
+      padding-top: 1px;
+      margin-left: 10px; }
+  .message-list-sp .tab-head > input:checked + label {
+    background: #fff;
+    border-bottom: 1px solid #222222; }
+  .message-list-sp .tab-head {
+    background: #fff; }
+  .message-list-sp .tab-head > label[for="tab1"] {
+    position: relative; }
+  .message-list-sp .tab-set .tab-panels {
+    background: #f3f3f3;
+    padding: 20px 15px; }
+    .message-list-sp .tab-set .tab-panels .searchbox-mess {
+      height: 60px;
+      width: 100%;
+      background: #fff;
+      color: #959595;
+      font-size: 1.8rem;
+      padding-left: 30px;
+      margin-bottom: 20px; }
+    .message-list-sp .tab-set .tab-panels .mess-items {
+      padding: 15px;
+      margin-bottom: 20px;
+      position: relative; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-avt {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-content .title {
+        font-size: 2rem;
+        margin-bottom: 15px; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-content .shot-content {
+        font-size: 1.4rem;
+        margin-bottom: 15px; }
+      .message-list-sp .tab-set .tab-panels .mess-items .mess-content .mess-time {
+        font-size: 1.2rem; }
+      .message-list-sp .tab-set .tab-panels .mess-items:after {
+        position: absolute;
+        content: url(../../images/mess-tag-read.png);
+        top: 0;
+        right: 10px;
+        zoom: 0.7; }
+      .message-list-sp .tab-set .tab-panels .mess-items.unread:after {
+        content: url(../../images/mess-tag-unread.png); }
+      .message-list-sp .tab-set .tab-panels .mess-items.unread::before {
+        display: none; } }
