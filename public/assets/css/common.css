@@ -48,12 +48,88 @@ p {
   .section-breadcrumb .my-container a.active {
     text-decoration: underline; }
 
+@media only screen and (max-width: 768px) {
+  .my-container {
+    padding: 0 15px; }
+  .section-next .text-right {
+    text-align: end;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2d2d2d; }
+  .section-next .text-mid {
+    text-align: center;
+    font-size: 30px;
+    color: #5d5d5d;
+    margin-bottom: 20px; }
+  .section-next .menu-next {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .section-next .menu-next .dirict {
+      border: 1px solid #595959;
+      color: #5D5D5D;
+      font-size: 24px;
+      font-family: 'YuGo-Medium';
+      text-align: center;
+      height: 70px;
+      border-radius: 5px; }
+    .section-next .menu-next .first-page {
+      width: 12%; }
+    .section-next .menu-next .prev-page {
+      width: 33%;
+      text-align: start; }
+    .section-next .menu-next .next-page {
+      width: 33%;
+      text-align: end; }
+    .section-next .menu-next .last-page {
+      width: 12%; }
+  .section-breadcrumb {
+    margin: unset; }
+    .section-breadcrumb .link-page {
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc; }
+    .section-breadcrumb img {
+      width: 20px;
+      height: auto;
+      margin: 20px 5px; }
+    .section-breadcrumb a {
+      font-size: 16px; }
+    .section-breadcrumb a.active {
+      text-decoration: underline; } }
+
+@media only screen and (max-width: 575px) {
+  .my-container {
+    padding: 0 15px; }
+  .section-next .menu-next .dirict {
+    font-size: 17px;
+    height: 50px; } }
+
+@media only screen and (max-width: 415px) {
+  .section-next .menu-next .dirict {
+    font-size: 13px;
+    height: 40px; }
+  .section-breadcrumb {
+    margin: unset; }
+    .section-breadcrumb .link-page {
+      padding: 0 15px;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc; }
+    .section-breadcrumb img {
+      width: 20px;
+      height: auto;
+      margin: 20px 5px; }
+    .section-breadcrumb a {
+      font-size: 16px; }
+    .section-breadcrumb a.active {
+      text-decoration: underline; } }
+
 .my-container-child {
   max-width: 1024px;
   background: #fff;
   margin: 0 auto; }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 1150px) and (max-width: 1300px) {
   .btnx2 .btn {
     font-size: 12px !important; }
   .btnx2 .btn-left {
@@ -65,7 +141,7 @@ p {
       background: url("../images/btn-icon-1.png") no-repeat 30px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
       background: url("../images/btn-icon-1.png") no-repeat 30px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 1000px) and (max-width: 1150px) {
   .btnx2 .btn {
     font-size: 10px !important; }
   .btnx2 .btn-right {
@@ -75,7 +151,7 @@ p {
       background: url("../images/book.png") no-repeat 40px, -webkit-linear-gradient(to right, #125691, #1F7B9C) !important;
       background: url("../images/book.png") no-repeat 40px, linear-gradient(to right, #125691, #1F7B9C) !important; } }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   .btnx2 .btn-left {
     background-position: 20px !important;
     background-size: 20px !important; }
