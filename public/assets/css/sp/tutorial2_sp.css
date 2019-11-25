@@ -8,8 +8,7 @@
   .slick-initialized .slick-slide {
     display: flex; }
   .tutorial2-sp {
-    display: flex;
-    padding-top: 50px; }
+    display: flex; }
     .tutorial2-sp.modal-tutorial2 {
       width: 100%;
       position: absolute;
@@ -115,7 +114,7 @@
         width: 60%;
         background: rgba(167, 167, 167, 0.3);
         color: #a3a3a3;
-        font-size: 35px;
+        font-size: 24px;
         margin-bottom: 20px; }
       .tutorial2-sp .tutorial-content .items-description {
         font-size: 26px;
@@ -131,7 +130,14 @@
       right: 30px;
       background: #f2f2f2;
       color: #2d2d2d;
-      font-size: 20px; } }
+      font-size: 20px; }
+    .tutorial2-sp .slick-list {
+      overflow: auto; }
+      .tutorial2-sp .slick-list .tutorial2-content {
+        width: calc(100vw - 80px);
+        margin: 40px; }
+  .tutorial {
+    padding-top: 50px; } }
 
 @media (max-width: 575.98px) {
   .tutorial2-sp.modal-tutorial2 .tutorial2-content {
@@ -200,4 +206,9 @@
       margin-top: 10px; }
   .tutorial2-sp.modal-tutorial2 .tutorial-close {
     top: 35px;
-    right: 0px; } }
+    right: 0px; }
+  .tutorial2-sp .slick-list {
+    overflow: auto; }
+    .tutorial2-sp .slick-list .tutorial2-content {
+      width: calc(100vw - 30px);
+      margin: 20px; } }
