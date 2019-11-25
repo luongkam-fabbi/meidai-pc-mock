@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <title>名大社</title>
+    <link rel="stylesheet" href="/assets/css/lib/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/css/lib/yakuhanjp.min.css" />
+    <link rel="stylesheet" href="/assets/css/lib/materialdesignicons.min.css" />
+    <link href="/assets/css/application.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="/assets/css/flex.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="/assets/css/sp/feed-list-sp.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="/assets/css/common.css" rel="stylesheet" media="all" type="text/css" />
+
+</head>
+
+<body>
+    <div class="wrapper ">
+        <!-- Main -->
+        <div class="page-feed-list container">
+
+            <!-- 企業投稿一覧 -->
+            <section class="top-section flex__between__center">
+                <h1 class="title">企業投稿一覧</h1>
+                <button class="btn-reset flex__around__center">
+                    <img src="/assets/images/reset.svg">
+                    検索条件変更
+                </button>
+            </section>
+             <!-- Search Options -->
+             <section class="section-searchbox">
+                <div class="tab-set">
+                    <div class="tab-panels">
+                        <section id="find-company" class="tab-panel">
+                            <div class="search-options flex__center__end">
+                                <div class="my-container flex__between__end">
+                                    <div class="options-group-items">
+                                        <div class="group-selectbox flex__around__center">
+                                            <div class="selectbox-items">
+                                                <button class="selectbox flex__start__center"
+                                                    id="btn_open_modal_location">
+                                                    <div style="display: flex;margin:0 auto;align-items: center">
+                                                        <span class="sp">業種</span>
+                                                        <img src="/assets/images/search/icon-search.png" alt="">
+                                                    </div>
+
+                                                </button>
+                                            </div>
+                                            <div class="icon-times flex__center__center">×</div>
+                                            <div class="selectbox-items">
+                                                <button class="selectbox flex__start__center"
+                                                    id="btn_open_modal_industry">
+                                                    <div style="display: flex;margin:0 auto;align-items: center">
+                                                    <span class="sp">職種</span>
+                                                    <img src="/assets/images/search/icon-search.png" alt="">
+                                                </div>
+                                                </button>
+                                            </div>
+                                            <div class="icon-times flex__center__center">×</div>
+                                            <div class="selectbox-items">
+                                                <button class="selectbox flex__start__center" id="btn_open_modal_job">
+                                                    <div style="display: flex;margin:0 auto;align-items: center">
+                                                    
+                                                    <span class="sp">勤務地</span>
+                                                    <img src="/assets/images/search/icon-search.png" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <div class="icon-times flex__center__center">×</div>
+                                            <div class="selectbox-items">
+                                                <button class="selectbox flex__start__center"
+                                                    id="btn_open_modal_feature">
+                                                    <div style="display: flex;margin:0 auto;align-items: center">
+                                                    <span class="sp">特徴</span>
+                                                    <img src="/assets/images/search/icon-search.png" alt="">
+                                                    </div>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div class="group-input">
+                                            <h3 class="title">キーワード：</h3>
+                                            <div class="form-input flex__center__start">
+                                                <label for="input-search " class="icon flex__center__center">
+                                                    <img src="/assets/images/search-black.svg">
+                                                </label>
+                                                <input type="text" id="input-search" placeholder="会社名などのキーワードを入力しよう">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group-search-clear flex__between__center">
+                                        <button class="btn-clear flex__center__center">クリア</button>
+                                        <button class="btn-search flex__center__center">
+                                            <img src="/assets/images/search-light.svg">
+                                            検索する
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Menu lever 2 -->
+            <div class="menu-lever-2">
+                <div class="menu-list flex__start__center">
+                    <a href="#" class="menu2-items active flex__center__center">すべて</a>
+                    <a href="#" class="menu2-items flex__center__center">
+                        <span class="sp">新着</span>
+                        <span class="pc">新着企業のみ</span>
+                    </a>
+                    <a href="#" class="menu2-items flex__center__center">
+                        <span class="sp">ピックアップ</span>
+                        <span class="pc">ピックアップ企業のみ</span>
+                    </a>
+                    <a href="#" class="menu2-items flex__center__center">
+                        <span class="sp">イベント出展</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- List Items -->
+            <div class="group-list-items flex__between__center flex__wrap">
+                <div class="list-items flex__start__start flex__column new">
+                    <img src="/assets/images/items-image-01.png" class="list-items-image">
+                    <span class="list-items-tag flex__center__center">社員インタビュー</span>
+                    <h3 class="list-items-title">社員インタビュー｜エンジニア</h3>
+                    <p class="list-items-text flex__start__center">
+                        <img src="/assets/images/icon-feed.png">
+                        名大テクノロジー株式会社
+                    </p>
+                </div>
+                <div class="list-items flex__start__start flex__column new">
+                    <img src="/assets/images/items-image-02.png" class="list-items-image">
+                    <span class="list-items-tag flex__center__center">会社について</span>
+                    <h3 class="list-items-title">私たちの哲学</h3>
+                    <p class="list-items-text flex__start__center">
+                        <img src="/assets/images/icon-feed.png">
+                        株式会社 名大技研
+                    </p>
+                </div>
+                <div class="list-items flex__start__start flex__column">
+                    <img src="/assets/images/items-image-03.png" class="list-items-image">
+                    <span class="list-items-tag flex__center__center">社員インタビュー</span>
+                    <h3 class="list-items-title">社員インタビュー｜エンジニア</h3>
+                    <p class="list-items-text flex__start__center">
+                        <img src="/assets/images/icon-feed.png">
+                        名大テクノロジー株式会社
+                    </p>
+                </div>
+                <div class="list-items flex__start__start flex__column">
+                    <img src="/assets/images/items-image-04.png" class="list-items-image">
+                    <span class="list-items-tag flex__center__center">お客様の声</span>
+                    <h3 class="list-items-title">CEOメッセージ</h3>
+                    <p class="list-items-text flex__start__center">
+                        <img src="/assets/images/icon-feed.png">
+                        名大テクノロジー株式会社
+                    </p>
+                </div>
+                <div class="list-items flex__start__start flex__column">
+                    <img src="/assets/images/items-image-05.png" class="list-items-image">
+                    <span class="list-items-tag flex__center__center">採用情報</span>
+                    <h3 class="list-items-title">インターン募集中</h3>
+                    <p class="list-items-text flex__start__center">
+                        <img src="/assets/images/icon-feed.png">
+                        名大テクノロジー株式会社
+                    </p>
+                </div>
+                <div class="list-items flex__start__start flex__column">
+                    <img src="/assets/images/items-image-06.png" class="list-items-image">
+                    <span class="list-items-tag flex__center__center">会社について</span>
+                    <h3 class="list-items-title">メッセージ</h3>
+                    <p class="list-items-text flex__start__center">
+                        <img src="/assets/images/icon-feed.png">
+                        名大テクノロジー株式会社
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="section-breadcrumb container">
+            <div class="link-page flex__start__center">
+                <a href="#" class="active">TOP</a>
+                <img src="/assets/images/arrow-right-black.png" alt="no image">
+                <a href="">フォロー中企業一覧</a>
+            </div>
+        </section>
+        <section class="end">
+    </div>
+</body>
+
+</html>
